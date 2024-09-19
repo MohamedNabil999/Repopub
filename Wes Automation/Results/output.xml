@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.3 on win32)" generated="2024-08-18T13:50:11.734702" rpa="false" schemaversion="5">
+<suite id="s1" name="Config" source="D:\Projects\Wes\Wes Automation\Resources\Configurations\config.robot">
+<test id="s1-t1" name="Print Python Path" line="44">
+<kw name="SimpleKeywords.say_hello">
+<msg time="2024-08-18T13:50:12.232868" level="FAIL">No keyword with name 'SimpleKeywords.say_hello' found.</msg>
+<var>${result}</var>
+<status status="FAIL" start="2024-08-18T13:50:12.232868" elapsed="0.000000">No keyword with name 'SimpleKeywords.say_hello' found.</status>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>${result}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-08-18T13:50:12.232868" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-08-18T13:50:12.230837" elapsed="0.003225">No keyword with name 'SimpleKeywords.say_hello' found.</status>
+</test>
+<status status="FAIL" start="2024-08-18T13:50:11.736696" elapsed="0.498363"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Config">Config</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-08-18T13:50:12.229235" level="WARN">Imported library 'D:\Projects\Wes\Wes Automation\Resources\Configurations\one.py' contains no keywords.</msg>
+</errors>
+</robot>

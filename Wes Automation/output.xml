@@ -1,0 +1,2290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.3 on win32)" generated="2024-08-08T14:16:48.516843" rpa="false" schemaversion="5">
+<suite id="s1" name="E2EWesDashboardTest" source="D:\Projects\Wes\Wes Automation\Tests\E2E\E2EWesDashboardTest.robot">
+<test id="s1-t1" name="Generate Data" line="15">
+<kw name="Create Data Case 1 In Json File" owner="ShipmentFiles">
+<kw name="Normalize Path" owner="OperatingSystem">
+<msg time="2024-08-08T14:16:50.036192" level="INFO">${DATA_FILE_CASE_1_PATH_VALUE} = D:\Projects\Wes\Wes Automation\TestData\DataCase1.json</msg>
+<var>${DATA_FILE_CASE_1_PATH_VALUE}</var>
+<arg>${DATA_FILE_CASE_1_PATH_VALUE}</arg>
+<doc>Normalizes the given path.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.036192" elapsed="0.000000"/>
+</kw>
+<kw name="Load Json From File" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.037228" level="INFO">${DATA_FILE_ITEM_1_CASE_1} = {'referenceId': '', 'data': [{'barcode': '0057942161326', 'parent1': '513186509084235923', 'parent2': '591258595843966545', 'GTIN': '22056235592479', 'batch_number': 'Micheal', 'expiry': '2030-08-12',...</msg>
+<var>${DATA_FILE_ITEM_1_CASE_1}</var>
+<arg>${DATA_FILE_CASE_1_PATH_VALUE}</arg>
+<doc>Load JSON from file.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.037228" elapsed="0.000962"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.038190" level="INFO">${INVENTORY_1_BARCODE_ITEM_1_CASE_1_VALUE} = 007602271496723080</msg>
+<var>${INVENTORY_1_BARCODE_ITEM_1_CASE_1_VALUE}</var>
+<arg>18</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.038190" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.039188" level="INFO">${INVENTORY_1_BARCODE_ITEM_1_CASE_1_VALUE} = 007602271496723080</msg>
+<arg>${INVENTORY_1_BARCODE_ITEM_1_CASE_1_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.038190" elapsed="0.000998"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.039188" level="INFO">${CASE_1_BARCODE_ITEM_1_CASE_1_VALUE} = 153131648748300478</msg>
+<var>${CASE_1_BARCODE_ITEM_1_CASE_1_VALUE}</var>
+<arg>18</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.039188" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.040185" level="INFO">${CASE_1_BARCODE_ITEM_1_CASE_1_VALUE} = 153131648748300478</msg>
+<arg>${CASE_1_BARCODE_ITEM_1_CASE_1_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.040185" elapsed="0.000000"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.040185" level="INFO">${ITEM_BARCODE_ITEM_1_CASE_1_VALUE} = 3309936439284</msg>
+<var>${ITEM_BARCODE_ITEM_1_CASE_1_VALUE}</var>
+<arg>13</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.040185" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.041182" level="INFO">${ITEM_BARCODE_ITEM_1_CASE_1_VALUE} = 3309936439284</msg>
+<arg>${ITEM_BARCODE_ITEM_1_CASE_1_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.041182" elapsed="0.000000"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.042182" level="INFO">${GTIN_ITEM_1_CASE_1_VALUE} = 97662207654067</msg>
+<var>${GTIN_ITEM_1_CASE_1_VALUE}</var>
+<arg>14</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.041182" elapsed="0.001000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.042182" level="INFO">${GTIN_ITEM_1_CASE_1_VALUE} = 97662207654067</msg>
+<arg>${GTIN_ITEM_1_CASE_1_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.042182" elapsed="0.000000"/>
+</kw>
+<kw name="First Name" owner="FakerLibrary">
+<msg time="2024-08-08T14:16:50.043176" level="INFO">${BATCH_NUMBER_ITEM_1_CASE_1_VALUE} = Savannah</msg>
+<var>${BATCH_NUMBER_ITEM_1_CASE_1_VALUE}</var>
+<status status="PASS" start="2024-08-08T14:16:50.042182" elapsed="0.000994"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.043176" level="INFO">${BATCH_NUMBER_ITEM_1_CASE_1_VALUE} = Savannah</msg>
+<arg>${BATCH_NUMBER_ITEM_1_CASE_1_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.043176" elapsed="0.000000"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.044174" level="INFO">${DIC_ITEM_1_CASE_1} = {'barcode': '3309936439284', 'parent1': '153131648748300478', 'parent2': '007602271496723080', 'GTIN': '97662207654067', 'batch_number': 'Savannah', 'expiry': '2030-08-12', 'manufacturing_date': '2020...</msg>
+<var>${DIC_ITEM_1_CASE_1}</var>
+<arg>barcode=${ITEM_BARCODE_ITEM_1_CASE_1_VALUE}</arg>
+<arg>parent1=${CASE_1_BARCODE_ITEM_1_CASE_1_VALUE}</arg>
+<arg>parent2=${INVENTORY_1_BARCODE_ITEM_1_CASE_1_VALUE}</arg>
+<arg>GTIN=${GTIN_ITEM_1_CASE_1_VALUE}</arg>
+<arg>batch_number=${BATCH_NUMBER_ITEM_1_CASE_1_VALUE}</arg>
+<arg>expiry=${EXPIRY_DATE_VALUE}</arg>
+<arg>manufacturing_date=${MANUFACTORING_DATE_VALUE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.044174" elapsed="0.000000"/>
+</kw>
+<kw name="Update Value To Json" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.085520" level="INFO">${BARCODE_VALUES_ITEM_1_CASE_1_FROM_JSON} = {'referenceId': '', 'data': [{'barcode': '3309936439284', 'parent1': '153131648748300478', 'parent2': '007602271496723080', 'GTIN': '97662207654067', 'batch_number': 'Savannah', 'expiry': '2030-08-12'...</msg>
+<var>${BARCODE_VALUES_ITEM_1_CASE_1_FROM_JSON}</var>
+<arg>${DATA_FILE_ITEM_1_CASE_1}</arg>
+<arg>$.data[0]</arg>
+<arg>${DIC_ITEM_1_CASE_1}</arg>
+<doc>Update value to JSON using JSONPath</doc>
+<status status="PASS" start="2024-08-08T14:16:50.045173" elapsed="0.040347"/>
+</kw>
+<kw name="Dump Json To File" owner="JSONLibrary">
+<arg>${DATA_FILE_CASE_1_PATH_VALUE}</arg>
+<arg>${BARCODE_VALUES_ITEM_1_CASE_1_FROM_JSON}</arg>
+<doc>Dump JSON to file</doc>
+<status status="PASS" start="2024-08-08T14:16:50.085520" elapsed="0.001000"/>
+</kw>
+<status status="PASS" start="2024-08-08T14:16:50.033053" elapsed="0.053467"/>
+</kw>
+<kw name="Create Data Case 2 In Json File" owner="ShipmentFiles">
+<kw name="Normalize Path" owner="OperatingSystem">
+<msg time="2024-08-08T14:16:50.088514" level="INFO">${DATA_FILE_CASE_2_PATH_VALUE} = D:\Projects\Wes\Wes Automation\TestData\DataCase2.json</msg>
+<var>${DATA_FILE_CASE_2_PATH_VALUE}</var>
+<arg>${DATA_FILE_CASE_2_PATH_VALUE}</arg>
+<doc>Normalizes the given path.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.087514" elapsed="0.001000"/>
+</kw>
+<kw name="Load Json From File" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.089512" level="INFO">${DATA_FILE_ITEM_1_CASE_2} = {'referenceId': '', 'data': [{'barcode': '0405363589867', 'parent1': '351543837003540301', 'GTIN': '17637144701533', 'batch_number': 'Andre', 'expiry': '2030-08-12', 'manufacturing_date': '2020-08-09'...</msg>
+<var>${DATA_FILE_ITEM_1_CASE_2}</var>
+<arg>${DATA_FILE_CASE_2_PATH_VALUE}</arg>
+<doc>Load JSON from file.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.088514" elapsed="0.000998"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.089512" level="INFO">${INVENTORY_1_BARCODE_ITEM_1_CASE_2_VALUE} = 771363346449289468</msg>
+<var>${INVENTORY_1_BARCODE_ITEM_1_CASE_2_VALUE}</var>
+<arg>18</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.089512" elapsed="0.000997"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.090509" level="INFO">${INVENTORY_1_BARCODE_ITEM_1_CASE_2_VALUE} = 771363346449289468</msg>
+<arg>${INVENTORY_1_BARCODE_ITEM_1_CASE_2_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.090509" elapsed="0.000000"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.091506" level="INFO">${ITEM_BARCODE_ITEM_1_CASE_2_VALUE} = 3259536247544</msg>
+<var>${ITEM_BARCODE_ITEM_1_CASE_2_VALUE}</var>
+<arg>13</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.090509" elapsed="0.000997"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.091506" level="INFO">${ITEM_BARCODE_ITEM_1_CASE_2_VALUE} = 3259536247544</msg>
+<arg>${ITEM_BARCODE_ITEM_1_CASE_2_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.091506" elapsed="0.000000"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.091506" level="INFO">${GTIN_ITEM_1_CASE_2_VALUE} = 28716585467649</msg>
+<var>${GTIN_ITEM_1_CASE_2_VALUE}</var>
+<arg>14</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.091506" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.092504" level="INFO">${GTIN_ITEM_1_CASE_2_VALUE} = 28716585467649</msg>
+<arg>${GTIN_ITEM_1_CASE_2_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.092504" elapsed="0.000000"/>
+</kw>
+<kw name="First Name" owner="FakerLibrary">
+<msg time="2024-08-08T14:16:50.092504" level="INFO">${BATCH_NUMBER_ITEM_1_CASE_2_VALUE} = Tiffany</msg>
+<var>${BATCH_NUMBER_ITEM_1_CASE_2_VALUE}</var>
+<status status="PASS" start="2024-08-08T14:16:50.092504" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.093501" level="INFO">${BATCH_NUMBER_ITEM_1_CASE_2_VALUE} = Tiffany</msg>
+<arg>${BATCH_NUMBER_ITEM_1_CASE_2_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.092504" elapsed="0.000997"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.093501" level="INFO">${DIC_ITEM_1_CASE_2} = {'barcode': '3259536247544', 'parent1': '771363346449289468', 'GTIN': '28716585467649', 'batch_number': 'Tiffany', 'expiry': '2030-08-12', 'manufacturing_date': '2020-08-09'}</msg>
+<var>${DIC_ITEM_1_CASE_2}</var>
+<arg>barcode=${ITEM_BARCODE_ITEM_1_CASE_2_VALUE}</arg>
+<arg>parent1=${INVENTORY_1_BARCODE_ITEM_1_CASE_2_VALUE}</arg>
+<arg>GTIN=${GTIN_ITEM_1_CASE_2_VALUE}</arg>
+<arg>batch_number=${BATCH_NUMBER_ITEM_1_CASE_2_VALUE}</arg>
+<arg>expiry=${EXPIRY_DATE_VALUE}</arg>
+<arg>manufacturing_date=${MANUFACTORING_DATE_VALUE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.093501" elapsed="0.000000"/>
+</kw>
+<kw name="Update Value To Json" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.127695" level="INFO">${BARCODE_VALUES_ITEM_1_CASE_2_FROM_JSON} = {'referenceId': '', 'data': [{'barcode': '3259536247544', 'parent1': '771363346449289468', 'GTIN': '28716585467649', 'batch_number': 'Tiffany', 'expiry': '2030-08-12', 'manufacturing_date': '2020-08-0...</msg>
+<var>${BARCODE_VALUES_ITEM_1_CASE_2_FROM_JSON}</var>
+<arg>${DATA_FILE_ITEM_1_CASE_2}</arg>
+<arg>$.data[0]</arg>
+<arg>${DIC_ITEM_1_CASE_2}</arg>
+<doc>Update value to JSON using JSONPath</doc>
+<status status="PASS" start="2024-08-08T14:16:50.094498" elapsed="0.033197"/>
+</kw>
+<kw name="Dump Json To File" owner="JSONLibrary">
+<arg>${DATA_FILE_CASE_2_PATH_VALUE}</arg>
+<arg>${BARCODE_VALUES_ITEM_1_CASE_2_FROM_JSON}</arg>
+<doc>Dump JSON to file</doc>
+<status status="PASS" start="2024-08-08T14:16:50.127695" elapsed="0.000995"/>
+</kw>
+<kw name="Load Json From File" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.129730" level="INFO">${DATA_FILE_ITEM_2_CASE_2} = {'referenceId': '', 'data': [{'barcode': '3259536247544', 'parent1': '771363346449289468', 'GTIN': '28716585467649', 'batch_number': 'Tiffany', 'expiry': '2030-08-12', 'manufacturing_date': '2020-08-0...</msg>
+<var>${DATA_FILE_ITEM_2_CASE_2}</var>
+<arg>${DATA_FILE_CASE_2_PATH_VALUE}</arg>
+<doc>Load JSON from file.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.128690" elapsed="0.001040"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.130721" level="INFO">${CASE_1_BARCODE_ITEM_2_CASE_2_VALUE} = 818045831476291068</msg>
+<var>${CASE_1_BARCODE_ITEM_2_CASE_2_VALUE}</var>
+<arg>18</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.130721" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.131714" level="INFO">${CASE_1_BARCODE_ITEM_2_CASE_2_VALUE} = 818045831476291068</msg>
+<arg>${CASE_1_BARCODE_ITEM_2_CASE_2_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.130721" elapsed="0.000993"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.132714" level="INFO">${ITEM_CASE_1_BARCODE_ITEM_2_CASE_2_VALUE} = 2979834410604</msg>
+<var>${ITEM_CASE_1_BARCODE_ITEM_2_CASE_2_VALUE}</var>
+<arg>13</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.131714" elapsed="0.001000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.132714" level="INFO">${ITEM_CASE_1_BARCODE_ITEM_2_CASE_2_VALUE} = 2979834410604</msg>
+<arg>${ITEM_CASE_1_BARCODE_ITEM_2_CASE_2_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.132714" elapsed="0.000000"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.134859" level="INFO">${DIC_ITEM_2_CASE_2} = {'barcode': '2979834410604', 'parent1': '818045831476291068', 'parent2': '771363346449289468', 'GTIN': '28716585467649', 'batch_number': 'Tiffany', 'expiry': '2030-08-12', 'manufacturing_date': '2020-...</msg>
+<var>${DIC_ITEM_2_CASE_2}</var>
+<arg>barcode=${ITEM_CASE_1_BARCODE_ITEM_2_CASE_2_VALUE}</arg>
+<arg>parent1=${CASE_1_BARCODE_ITEM_2_CASE_2_VALUE}</arg>
+<arg>parent2=${INVENTORY_1_BARCODE_ITEM_1_CASE_2_VALUE}</arg>
+<arg>GTIN=${GTIN_ITEM_1_CASE_2_VALUE}</arg>
+<arg>batch_number=${BATCH_NUMBER_ITEM_1_CASE_2_VALUE}</arg>
+<arg>expiry=${EXPIRY_DATE_VALUE}</arg>
+<arg>manufacturing_date=${MANUFACTORING_DATE_VALUE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.133716" elapsed="0.001143"/>
+</kw>
+<kw name="Update Value To Json" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.159024" level="INFO">${BARCODE_VALUES_ITEM_2_CASE_2_FROM_JSON} = {'referenceId': '', 'data': [{'barcode': '3259536247544', 'parent1': '771363346449289468', 'GTIN': '28716585467649', 'batch_number': 'Tiffany', 'expiry': '2030-08-12', 'manufacturing_date': '2020-08-0...</msg>
+<var>${BARCODE_VALUES_ITEM_2_CASE_2_FROM_JSON}</var>
+<arg>${DATA_FILE_ITEM_2_CASE_2}</arg>
+<arg>$.data[1]</arg>
+<arg>${DIC_ITEM_2_CASE_2}</arg>
+<doc>Update value to JSON using JSONPath</doc>
+<status status="PASS" start="2024-08-08T14:16:50.134859" elapsed="0.024165"/>
+</kw>
+<kw name="Dump Json To File" owner="JSONLibrary">
+<arg>${DATA_FILE_CASE_2_PATH_VALUE}</arg>
+<arg>${BARCODE_VALUES_ITEM_2_CASE_2_FROM_JSON}</arg>
+<doc>Dump JSON to file</doc>
+<status status="PASS" start="2024-08-08T14:16:50.159024" elapsed="0.000998"/>
+</kw>
+<kw name="Load Json From File" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.161020" level="INFO">${DATA_FILE_ITEM_3_CASE_2} = {'referenceId': '', 'data': [{'barcode': '3259536247544', 'parent1': '771363346449289468', 'GTIN': '28716585467649', 'batch_number': 'Tiffany', 'expiry': '2030-08-12', 'manufacturing_date': '2020-08-0...</msg>
+<var>${DATA_FILE_ITEM_3_CASE_2}</var>
+<arg>${DATA_FILE_CASE_2_PATH_VALUE}</arg>
+<doc>Load JSON from file.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.160022" elapsed="0.000998"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.161020" level="INFO">${CASE_1_BARCODE_ITEM_3_CASE_2_VALUE} = 678140259133258439</msg>
+<var>${CASE_1_BARCODE_ITEM_3_CASE_2_VALUE}</var>
+<arg>18</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.161020" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.162016" level="INFO">${CASE_1_BARCODE_ITEM_3_CASE_2_VALUE} = 678140259133258439</msg>
+<arg>${CASE_1_BARCODE_ITEM_3_CASE_2_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.162016" elapsed="0.000000"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.163013" level="INFO">${CASE_2_BARCODE_ITEM_3_CASE_2_VALUE} = 543885101588451571</msg>
+<var>${CASE_2_BARCODE_ITEM_3_CASE_2_VALUE}</var>
+<arg>18</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.162016" elapsed="0.000997"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.163013" level="INFO">${CASE_2_BARCODE_ITEM_3_CASE_2_VALUE} = 543885101588451571</msg>
+<arg>${CASE_2_BARCODE_ITEM_3_CASE_2_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.163013" elapsed="0.000000"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.164016" level="INFO">${ITEM_CASE_1_CASE_2_BARCODE_ITEM_3_CASE_2_VALUE} = 2716269997046</msg>
+<var>${ITEM_CASE_1_CASE_2_BARCODE_ITEM_3_CASE_2_VALUE}</var>
+<arg>13</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.163013" elapsed="0.001003"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.164016" level="INFO">${ITEM_CASE_1_CASE_2_BARCODE_ITEM_3_CASE_2_VALUE} = 2716269997046</msg>
+<arg>${ITEM_CASE_1_CASE_2_BARCODE_ITEM_3_CASE_2_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.164016" elapsed="0.000000"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.165013" level="INFO">${DIC_ITEM_3_CASE_2} = {'barcode': '2716269997046', 'parent1': '543885101588451571', 'parent2': '678140259133258439', 'parent3': '771363346449289468', 'GTIN': '28716585467649', 'batch_number': 'Tiffany', 'expiry': '2030-08-...</msg>
+<var>${DIC_ITEM_3_CASE_2}</var>
+<arg>barcode=${ITEM_CASE_1_CASE_2_BARCODE_ITEM_3_CASE_2_VALUE}</arg>
+<arg>parent1=${CASE_2_BARCODE_ITEM_3_CASE_2_VALUE}</arg>
+<arg>parent2=${CASE_1_BARCODE_ITEM_3_CASE_2_VALUE}</arg>
+<arg>parent3=${INVENTORY_1_BARCODE_ITEM_1_CASE_2_VALUE}</arg>
+<arg>GTIN=${GTIN_ITEM_1_CASE_2_VALUE}</arg>
+<arg>batch_number=${BATCH_NUMBER_ITEM_1_CASE_2_VALUE}</arg>
+<arg>expiry=${EXPIRY_DATE_VALUE}</arg>
+<arg>manufacturing_date=${MANUFACTORING_DATE_VALUE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.164016" elapsed="0.000997"/>
+</kw>
+<kw name="Update Value To Json" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.186843" level="INFO">${BARCODE_VALUES_ITEM_3_CASE_2_FROM_JSON} = {'referenceId': '', 'data': [{'barcode': '3259536247544', 'parent1': '771363346449289468', 'GTIN': '28716585467649', 'batch_number': 'Tiffany', 'expiry': '2030-08-12', 'manufacturing_date': '2020-08-0...</msg>
+<var>${BARCODE_VALUES_ITEM_3_CASE_2_FROM_JSON}</var>
+<arg>${DATA_FILE_ITEM_3_CASE_2}</arg>
+<arg>$.data[2]</arg>
+<arg>${DIC_ITEM_3_CASE_2}</arg>
+<doc>Update value to JSON using JSONPath</doc>
+<status status="PASS" start="2024-08-08T14:16:50.165013" elapsed="0.021830"/>
+</kw>
+<kw name="Dump Json To File" owner="JSONLibrary">
+<arg>${DATA_FILE_CASE_2_PATH_VALUE}</arg>
+<arg>${BARCODE_VALUES_ITEM_3_CASE_2_FROM_JSON}</arg>
+<doc>Dump JSON to file</doc>
+<status status="PASS" start="2024-08-08T14:16:50.187842" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-08T14:16:50.087514" elapsed="0.100328"/>
+</kw>
+<kw name="Create Data Case 3 In Json File" owner="ShipmentFiles">
+<kw name="Normalize Path" owner="OperatingSystem">
+<msg time="2024-08-08T14:16:50.189835" level="INFO">${DATA_FILE_CASE_3_PATH_VALUE} = D:\Projects\Wes\Wes Automation\TestData\DataCase3.json</msg>
+<var>${DATA_FILE_CASE_3_PATH_VALUE}</var>
+<arg>${DATA_FILE_CASE_3_PATH_VALUE}</arg>
+<doc>Normalizes the given path.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.188838" elapsed="0.000997"/>
+</kw>
+<kw name="Load Json From File" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.189835" level="INFO">${DATA_FILE_ITEM_1_CASE_3} = {'referenceId': '', 'data': [{'barcode': '1743469308689', 'parent1': '384182470330655714', 'GTIN': '41286643462324', 'batch_number': 'Cody', 'expiry': '2030-08-12', 'manufacturing_date': '2020-08-09'}...</msg>
+<var>${DATA_FILE_ITEM_1_CASE_3}</var>
+<arg>${DATA_FILE_CASE_3_PATH_VALUE}</arg>
+<doc>Load JSON from file.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.189835" elapsed="0.000000"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.190833" level="INFO">${INVENTORY_1_BARCODE_ITEM_1_CASE_3_VALUE} = 201733151632037046</msg>
+<var>${INVENTORY_1_BARCODE_ITEM_1_CASE_3_VALUE}</var>
+<arg>18</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.190833" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.190833" level="INFO">${INVENTORY_1_BARCODE_ITEM_1_CASE_3_VALUE} = 201733151632037046</msg>
+<arg>${INVENTORY_1_BARCODE_ITEM_1_CASE_3_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.190833" elapsed="0.000000"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.191830" level="INFO">${ITEM_BARCODE_ITEM_1_CASE_3_VALUE} = 1104672185097</msg>
+<var>${ITEM_BARCODE_ITEM_1_CASE_3_VALUE}</var>
+<arg>13</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.191830" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.191830" level="INFO">${ITEM_BARCODE_ITEM_1_CASE_3_VALUE} = 1104672185097</msg>
+<arg>${ITEM_BARCODE_ITEM_1_CASE_3_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.191830" elapsed="0.000000"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.192829" level="INFO">${GTIN_ITEM_1_CASE_3_VALUE} = 28230055762653</msg>
+<var>${GTIN_ITEM_1_CASE_3_VALUE}</var>
+<arg>14</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.192829" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.193826" level="INFO">${GTIN_ITEM_1_CASE_3_VALUE} = 28230055762653</msg>
+<arg>${GTIN_ITEM_1_CASE_3_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.192829" elapsed="0.000997"/>
+</kw>
+<kw name="First Name" owner="FakerLibrary">
+<msg time="2024-08-08T14:16:50.193826" level="INFO">${BATCH_NUMBER_ITEM_1_CASE_3_VALUE} = Frederick</msg>
+<var>${BATCH_NUMBER_ITEM_1_CASE_3_VALUE}</var>
+<status status="PASS" start="2024-08-08T14:16:50.193826" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.193826" level="INFO">${BATCH_NUMBER_ITEM_1_CASE_3_VALUE} = Frederick</msg>
+<arg>${BATCH_NUMBER_ITEM_1_CASE_3_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.193826" elapsed="0.000000"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.194822" level="INFO">${DIC_ITEM_1_CASE_3} = {'barcode': '1104672185097', 'parent1': '201733151632037046', 'GTIN': '28230055762653', 'batch_number': 'Frederick', 'expiry': '2030-08-12', 'manufacturing_date': '2020-08-09'}</msg>
+<var>${DIC_ITEM_1_CASE_3}</var>
+<arg>barcode=${ITEM_BARCODE_ITEM_1_CASE_3_VALUE}</arg>
+<arg>parent1=${INVENTORY_1_BARCODE_ITEM_1_CASE_3_VALUE}</arg>
+<arg>GTIN=${GTIN_ITEM_1_CASE_3_VALUE}</arg>
+<arg>batch_number=${BATCH_NUMBER_ITEM_1_CASE_3_VALUE}</arg>
+<arg>expiry=${EXPIRY_DATE_VALUE}</arg>
+<arg>manufacturing_date=${MANUFACTORING_DATE_VALUE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.194822" elapsed="0.000000"/>
+</kw>
+<kw name="Update Value To Json" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.219267" level="INFO">${BARCODE_VALUES_ITEM_1_CASE_3_FROM_JSON} = {'referenceId': '', 'data': [{'barcode': '1104672185097', 'parent1': '201733151632037046', 'GTIN': '28230055762653', 'batch_number': 'Frederick', 'expiry': '2030-08-12', 'manufacturing_date': '2020-08...</msg>
+<var>${BARCODE_VALUES_ITEM_1_CASE_3_FROM_JSON}</var>
+<arg>${DATA_FILE_ITEM_1_CASE_3}</arg>
+<arg>$.data[0]</arg>
+<arg>${DIC_ITEM_1_CASE_3}</arg>
+<doc>Update value to JSON using JSONPath</doc>
+<status status="PASS" start="2024-08-08T14:16:50.194822" elapsed="0.024445"/>
+</kw>
+<kw name="Dump Json To File" owner="JSONLibrary">
+<arg>${DATA_FILE_CASE_3_PATH_VALUE}</arg>
+<arg>${BARCODE_VALUES_ITEM_1_CASE_3_FROM_JSON}</arg>
+<doc>Dump JSON to file</doc>
+<status status="PASS" start="2024-08-08T14:16:50.219267" elapsed="0.000995"/>
+</kw>
+<kw name="Load Json From File" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.221259" level="INFO">${DATA_FILE_ITEM_2_CASE_3} = {'referenceId': '', 'data': [{'barcode': '1104672185097', 'parent1': '201733151632037046', 'GTIN': '28230055762653', 'batch_number': 'Frederick', 'expiry': '2030-08-12', 'manufacturing_date': '2020-08...</msg>
+<var>${DATA_FILE_ITEM_2_CASE_3}</var>
+<arg>${DATA_FILE_CASE_3_PATH_VALUE}</arg>
+<doc>Load JSON from file.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.220262" elapsed="0.000997"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.222256" level="INFO">${ITEM_BARCODE_ITEM_2_CASE_3_VALUE} = 0592091610953</msg>
+<var>${ITEM_BARCODE_ITEM_2_CASE_3_VALUE}</var>
+<arg>13</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.221259" elapsed="0.000997"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.223219" level="INFO">${ITEM_BARCODE_ITEM_2_CASE_3_VALUE} = 0592091610953</msg>
+<arg>${ITEM_BARCODE_ITEM_2_CASE_3_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.222256" elapsed="0.000963"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.224220" level="INFO">${DIC_ITEM_2_CASE_3} = {'barcode': '0592091610953', 'parent1': '201733151632037046', 'GTIN': '28230055762653', 'batch_number': 'Frederick', 'expiry': '2030-08-12', 'manufacturing_date': '2020-08-09'}</msg>
+<var>${DIC_ITEM_2_CASE_3}</var>
+<arg>barcode=${ITEM_BARCODE_ITEM_2_CASE_3_VALUE}</arg>
+<arg>parent1=${INVENTORY_1_BARCODE_ITEM_1_CASE_3_VALUE}</arg>
+<arg>GTIN=${GTIN_ITEM_1_CASE_3_VALUE}</arg>
+<arg>batch_number=${BATCH_NUMBER_ITEM_1_CASE_3_VALUE}</arg>
+<arg>expiry=${EXPIRY_DATE_VALUE}</arg>
+<arg>manufacturing_date=${MANUFACTORING_DATE_VALUE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.223219" elapsed="0.001001"/>
+</kw>
+<kw name="Update Value To Json" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.252784" level="INFO">${BARCODE_VALUES_ITEM_2_CASE_3_FROM_JSON} = {'referenceId': '', 'data': [{'barcode': '1104672185097', 'parent1': '201733151632037046', 'GTIN': '28230055762653', 'batch_number': 'Frederick', 'expiry': '2030-08-12', 'manufacturing_date': '2020-08...</msg>
+<var>${BARCODE_VALUES_ITEM_2_CASE_3_FROM_JSON}</var>
+<arg>${DATA_FILE_ITEM_2_CASE_3}</arg>
+<arg>$.data[1]</arg>
+<arg>${DIC_ITEM_2_CASE_3}</arg>
+<doc>Update value to JSON using JSONPath</doc>
+<status status="PASS" start="2024-08-08T14:16:50.224220" elapsed="0.028564"/>
+</kw>
+<kw name="Dump Json To File" owner="JSONLibrary">
+<arg>${DATA_FILE_CASE_3_PATH_VALUE}</arg>
+<arg>${BARCODE_VALUES_ITEM_2_CASE_3_FROM_JSON}</arg>
+<doc>Dump JSON to file</doc>
+<status status="PASS" start="2024-08-08T14:16:50.252784" elapsed="0.000000"/>
+</kw>
+<kw name="Load Json From File" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.253747" level="INFO">${DATA_FILE_ITEM_3_CASE_3} = {'referenceId': '', 'data': [{'barcode': '1104672185097', 'parent1': '201733151632037046', 'GTIN': '28230055762653', 'batch_number': 'Frederick', 'expiry': '2030-08-12', 'manufacturing_date': '2020-08...</msg>
+<var>${DATA_FILE_ITEM_3_CASE_3}</var>
+<arg>${DATA_FILE_CASE_3_PATH_VALUE}</arg>
+<doc>Load JSON from file.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.253747" elapsed="0.000000"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.254746" level="INFO">${ITEM_BARCODE_ITEM_3_CASE_3_VALUE} = 2015628886848</msg>
+<var>${ITEM_BARCODE_ITEM_3_CASE_3_VALUE}</var>
+<arg>13</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.253747" elapsed="0.000999"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.254746" level="INFO">${ITEM_BARCODE_ITEM_3_CASE_3_VALUE} = 2015628886848</msg>
+<arg>${ITEM_BARCODE_ITEM_3_CASE_3_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.254746" elapsed="0.000000"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.255941" level="INFO">${DIC_ITEM_3_CASE_3} = {'barcode': '2015628886848', 'parent1': '201733151632037046', 'GTIN': '28230055762653', 'batch_number': 'Frederick', 'expiry': '2030-08-12', 'manufacturing_date': '2020-08-09'}</msg>
+<var>${DIC_ITEM_3_CASE_3}</var>
+<arg>barcode=${ITEM_BARCODE_ITEM_3_CASE_3_VALUE}</arg>
+<arg>parent1=${INVENTORY_1_BARCODE_ITEM_1_CASE_3_VALUE}</arg>
+<arg>GTIN=${GTIN_ITEM_1_CASE_3_VALUE}</arg>
+<arg>batch_number=${BATCH_NUMBER_ITEM_1_CASE_3_VALUE}</arg>
+<arg>expiry=${EXPIRY_DATE_VALUE}</arg>
+<arg>manufacturing_date=${MANUFACTORING_DATE_VALUE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.255743" elapsed="0.000198"/>
+</kw>
+<kw name="Update Value To Json" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.279728" level="INFO">${BARCODE_VALUES_ITEM_3_CASE_3_FROM_JSON} = {'referenceId': '', 'data': [{'barcode': '1104672185097', 'parent1': '201733151632037046', 'GTIN': '28230055762653', 'batch_number': 'Frederick', 'expiry': '2030-08-12', 'manufacturing_date': '2020-08...</msg>
+<var>${BARCODE_VALUES_ITEM_3_CASE_3_FROM_JSON}</var>
+<arg>${DATA_FILE_ITEM_3_CASE_3}</arg>
+<arg>$.data[2]</arg>
+<arg>${DIC_ITEM_3_CASE_3}</arg>
+<doc>Update value to JSON using JSONPath</doc>
+<status status="PASS" start="2024-08-08T14:16:50.255941" elapsed="0.023787"/>
+</kw>
+<kw name="Dump Json To File" owner="JSONLibrary">
+<arg>${DATA_FILE_CASE_3_PATH_VALUE}</arg>
+<arg>${BARCODE_VALUES_ITEM_3_CASE_3_FROM_JSON}</arg>
+<doc>Dump JSON to file</doc>
+<status status="PASS" start="2024-08-08T14:16:50.280727" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-08T14:16:50.188838" elapsed="0.092885"/>
+</kw>
+<kw name="Create Data Case 4 In Json File" owner="ShipmentFiles">
+<kw name="Normalize Path" owner="OperatingSystem">
+<msg time="2024-08-08T14:16:50.282720" level="INFO">${DATA_FILE_CASE_4_PATH_VALUE} = D:\Projects\Wes\Wes Automation\TestData\DataCase4.json</msg>
+<var>${DATA_FILE_CASE_4_PATH_VALUE}</var>
+<arg>${DATA_FILE_CASE_4_PATH_VALUE}</arg>
+<doc>Normalizes the given path.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.282720" elapsed="0.000000"/>
+</kw>
+<kw name="Load Json From File" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.283718" level="INFO">${DATA_FILE_ITEM_1_CASE_4} = {'referenceId': '', 'data': [{'barcode': '2233178710184', 'parent1': '541285570314725678', 'GTIN': '74399042963553', 'batch_number': 'Michael', 'expiry': '2030-08-12', 'manufacturing_date': '2020-08-0...</msg>
+<var>${DATA_FILE_ITEM_1_CASE_4}</var>
+<arg>${DATA_FILE_CASE_4_PATH_VALUE}</arg>
+<doc>Load JSON from file.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.282720" elapsed="0.000998"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.283718" level="INFO">${INVENTORY_1_BARCODE_ITEM_1_CASE_4_VALUE} = 441403769118360680</msg>
+<var>${INVENTORY_1_BARCODE_ITEM_1_CASE_4_VALUE}</var>
+<arg>18</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.283718" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.284714" level="INFO">${INVENTORY_1_BARCODE_ITEM_1_CASE_4_VALUE} = 441403769118360680</msg>
+<arg>${INVENTORY_1_BARCODE_ITEM_1_CASE_4_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.283718" elapsed="0.000996"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.284714" level="INFO">${ITEM_BARCODE_ITEM_1_CASE_4_VALUE} = 7969354305497</msg>
+<var>${ITEM_BARCODE_ITEM_1_CASE_4_VALUE}</var>
+<arg>13</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.284714" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.284714" level="INFO">${ITEM_BARCODE_ITEM_1_CASE_4_VALUE} = 7969354305497</msg>
+<arg>${ITEM_BARCODE_ITEM_1_CASE_4_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.284714" elapsed="0.000997"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.285904" level="INFO">${GTIN_ITEM_1_CASE_4_VALUE} = 15300803752337</msg>
+<var>${GTIN_ITEM_1_CASE_4_VALUE}</var>
+<arg>14</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.285904" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.285904" level="INFO">${GTIN_ITEM_1_CASE_4_VALUE} = 15300803752337</msg>
+<arg>${GTIN_ITEM_1_CASE_4_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.285904" elapsed="0.000000"/>
+</kw>
+<kw name="First Name" owner="FakerLibrary">
+<msg time="2024-08-08T14:16:50.286934" level="INFO">${BATCH_NUMBER_ITEM_1_CASE_4_VALUE} = Cheryl</msg>
+<var>${BATCH_NUMBER_ITEM_1_CASE_4_VALUE}</var>
+<status status="PASS" start="2024-08-08T14:16:50.285904" elapsed="0.001030"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.286934" level="INFO">${BATCH_NUMBER_ITEM_1_CASE_4_VALUE} = Cheryl</msg>
+<arg>${BATCH_NUMBER_ITEM_1_CASE_4_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.286934" elapsed="0.000000"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.287900" level="INFO">${DIC_ITEM_1_CASE_4} = {'barcode': '7969354305497', 'parent1': '441403769118360680', 'GTIN': '15300803752337', 'batch_number': 'Cheryl', 'expiry': '2030-08-12', 'manufacturing_date': '2020-08-09'}</msg>
+<var>${DIC_ITEM_1_CASE_4}</var>
+<arg>barcode=${ITEM_BARCODE_ITEM_1_CASE_4_VALUE}</arg>
+<arg>parent1=${INVENTORY_1_BARCODE_ITEM_1_CASE_4_VALUE}</arg>
+<arg>GTIN=${GTIN_ITEM_1_CASE_4_VALUE}</arg>
+<arg>batch_number=${BATCH_NUMBER_ITEM_1_CASE_4_VALUE}</arg>
+<arg>expiry=${EXPIRY_DATE_VALUE}</arg>
+<arg>manufacturing_date=${MANUFACTORING_DATE_VALUE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.286934" elapsed="0.000966"/>
+</kw>
+<kw name="Update Value To Json" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.310196" level="INFO">${BARCODE_VALUES_ITEM_1_CASE_4_FROM_JSON} = {'referenceId': '', 'data': [{'barcode': '7969354305497', 'parent1': '441403769118360680', 'GTIN': '15300803752337', 'batch_number': 'Cheryl', 'expiry': '2030-08-12', 'manufacturing_date': '2020-08-09...</msg>
+<var>${BARCODE_VALUES_ITEM_1_CASE_4_FROM_JSON}</var>
+<arg>${DATA_FILE_ITEM_1_CASE_4}</arg>
+<arg>$.data[0]</arg>
+<arg>${DIC_ITEM_1_CASE_4}</arg>
+<doc>Update value to JSON using JSONPath</doc>
+<status status="PASS" start="2024-08-08T14:16:50.287900" elapsed="0.022296"/>
+</kw>
+<kw name="Dump Json To File" owner="JSONLibrary">
+<arg>${DATA_FILE_CASE_4_PATH_VALUE}</arg>
+<arg>${BARCODE_VALUES_ITEM_1_CASE_4_FROM_JSON}</arg>
+<doc>Dump JSON to file</doc>
+<status status="PASS" start="2024-08-08T14:16:50.310196" elapsed="0.000996"/>
+</kw>
+<kw name="Load Json From File" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.312190" level="INFO">${DATA_FILE_ITEM_2_CASE_4} = {'referenceId': '', 'data': [{'barcode': '7969354305497', 'parent1': '441403769118360680', 'GTIN': '15300803752337', 'batch_number': 'Cheryl', 'expiry': '2030-08-12', 'manufacturing_date': '2020-08-09...</msg>
+<var>${DATA_FILE_ITEM_2_CASE_4}</var>
+<arg>${DATA_FILE_CASE_4_PATH_VALUE}</arg>
+<doc>Load JSON from file.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.311192" elapsed="0.000998"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.313187" level="INFO">${INVENTORY_2_BARCODE_ITEM_1_CASE_4_VALUE} = 940203016784111782</msg>
+<var>${INVENTORY_2_BARCODE_ITEM_1_CASE_4_VALUE}</var>
+<arg>18</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.312190" elapsed="0.000997"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.313187" level="INFO">${INVENTORY_2_BARCODE_ITEM_1_CASE_4_VALUE} = 940203016784111782</msg>
+<arg>${INVENTORY_2_BARCODE_ITEM_1_CASE_4_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.313187" elapsed="0.000000"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.314185" level="INFO">${ITEM_BARCODE_ITEM_2_CASE_4_VALUE} = 5476814938928</msg>
+<var>${ITEM_BARCODE_ITEM_2_CASE_4_VALUE}</var>
+<arg>13</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.313187" elapsed="0.000998"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.314185" level="INFO">${ITEM_BARCODE_ITEM_2_CASE_4_VALUE} = 5476814938928</msg>
+<arg>${ITEM_BARCODE_ITEM_2_CASE_4_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.314185" elapsed="0.000000"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.315180" level="INFO">${DIC_ITEM_2_CASE_4} = {'barcode': '5476814938928', 'parent1': '940203016784111782', 'GTIN': '15300803752337', 'batch_number': 'Cheryl', 'expiry': '2030-08-12', 'manufacturing_date': '2020-08-09'}</msg>
+<var>${DIC_ITEM_2_CASE_4}</var>
+<arg>barcode=${ITEM_BARCODE_ITEM_2_CASE_4_VALUE}</arg>
+<arg>parent1=${INVENTORY_2_BARCODE_ITEM_1_CASE_4_VALUE}</arg>
+<arg>GTIN=${GTIN_ITEM_1_CASE_4_VALUE}</arg>
+<arg>batch_number=${BATCH_NUMBER_ITEM_1_CASE_4_VALUE}</arg>
+<arg>expiry=${EXPIRY_DATE_VALUE}</arg>
+<arg>manufacturing_date=${MANUFACTORING_DATE_VALUE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.314185" elapsed="0.000995"/>
+</kw>
+<kw name="Update Value To Json" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.344667" level="INFO">${BARCODE_VALUES_ITEM_2_CASE_4_FROM_JSON} = {'referenceId': '', 'data': [{'barcode': '7969354305497', 'parent1': '441403769118360680', 'GTIN': '15300803752337', 'batch_number': 'Cheryl', 'expiry': '2030-08-12', 'manufacturing_date': '2020-08-09...</msg>
+<var>${BARCODE_VALUES_ITEM_2_CASE_4_FROM_JSON}</var>
+<arg>${DATA_FILE_ITEM_2_CASE_4}</arg>
+<arg>$.data[1]</arg>
+<arg>${DIC_ITEM_2_CASE_4}</arg>
+<doc>Update value to JSON using JSONPath</doc>
+<status status="PASS" start="2024-08-08T14:16:50.315180" elapsed="0.030517"/>
+</kw>
+<kw name="Dump Json To File" owner="JSONLibrary">
+<arg>${DATA_FILE_CASE_4_PATH_VALUE}</arg>
+<arg>${BARCODE_VALUES_ITEM_2_CASE_4_FROM_JSON}</arg>
+<doc>Dump JSON to file</doc>
+<status status="PASS" start="2024-08-08T14:16:50.345697" elapsed="0.000965"/>
+</kw>
+<status status="PASS" start="2024-08-08T14:16:50.281723" elapsed="0.064939"/>
+</kw>
+<kw name="Create Data Case 5 In Json File" owner="ShipmentFiles">
+<kw name="Normalize Path" owner="OperatingSystem">
+<msg time="2024-08-08T14:16:50.347694" level="INFO">${DATA_FILE_CASE_5_PATH_VALUE} = D:\Projects\Wes\Wes Automation\TestData\DataCase5.json</msg>
+<var>${DATA_FILE_CASE_5_PATH_VALUE}</var>
+<arg>${DATA_FILE_CASE_5_PATH_VALUE}</arg>
+<doc>Normalizes the given path.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.347694" elapsed="0.000000"/>
+</kw>
+<kw name="Load Json From File" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.348693" level="INFO">${DATA_FILE_ITEM_1_CASE_5} = {'referenceId': '', 'data': [{'barcode': '8827390949672', 'parent1': '102771240989438267', 'parent2': '749075309490579684', 'GTIN': '29097897633019', 'batch_number': 'Adam', 'expiry': '2030-08-12', 'm...</msg>
+<var>${DATA_FILE_ITEM_1_CASE_5}</var>
+<arg>${DATA_FILE_CASE_5_PATH_VALUE}</arg>
+<doc>Load JSON from file.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.347694" elapsed="0.000999"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.348693" level="INFO">${INVENTORY_1_BARCODE_ITEM_1_CASE_5_VALUE} = 072506449122812171</msg>
+<var>${INVENTORY_1_BARCODE_ITEM_1_CASE_5_VALUE}</var>
+<arg>18</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.348693" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.349687" level="INFO">${INVENTORY_1_BARCODE_ITEM_1_CASE_5_VALUE} = 072506449122812171</msg>
+<arg>${INVENTORY_1_BARCODE_ITEM_1_CASE_5_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.348693" elapsed="0.000994"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.349687" level="INFO">${CASE_1_BARCODE_ITEM_1_CASE_5_VALUE} = 994686106954188348</msg>
+<var>${CASE_1_BARCODE_ITEM_1_CASE_5_VALUE}</var>
+<arg>18</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.349687" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.350684" level="INFO">${CASE_1_BARCODE_ITEM_1_CASE_5_VALUE} = 994686106954188348</msg>
+<arg>${CASE_1_BARCODE_ITEM_1_CASE_5_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.349687" elapsed="0.000997"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.350684" level="INFO">${ITEM_BARCODE_ITEM_1_CASE_5_VALUE} = 8398540167081</msg>
+<var>${ITEM_BARCODE_ITEM_1_CASE_5_VALUE}</var>
+<arg>13</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.350684" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.351679" level="INFO">${ITEM_BARCODE_ITEM_1_CASE_5_VALUE} = 8398540167081</msg>
+<arg>${ITEM_BARCODE_ITEM_1_CASE_5_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.350684" elapsed="0.000995"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.351679" level="INFO">${GTIN_ITEM_1_CASE_5_VALUE} = 20923881447798</msg>
+<var>${GTIN_ITEM_1_CASE_5_VALUE}</var>
+<arg>14</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.351679" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.351679" level="INFO">${GTIN_ITEM_1_CASE_5_VALUE} = 20923881447798</msg>
+<arg>${GTIN_ITEM_1_CASE_5_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.351679" elapsed="0.000000"/>
+</kw>
+<kw name="First Name" owner="FakerLibrary">
+<msg time="2024-08-08T14:16:50.352682" level="INFO">${BATCH_NUMBER_ITEM_1_CASE_5_VALUE} = Alexandra</msg>
+<var>${BATCH_NUMBER_ITEM_1_CASE_5_VALUE}</var>
+<status status="PASS" start="2024-08-08T14:16:50.352682" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.352682" level="INFO">${BATCH_NUMBER_ITEM_1_CASE_5_VALUE} = Alexandra</msg>
+<arg>${BATCH_NUMBER_ITEM_1_CASE_5_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.352682" elapsed="0.000000"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.353676" level="INFO">${DIC_ITEM_1_CASE_5} = {'barcode': '8398540167081', 'parent1': '994686106954188348', 'parent2': '072506449122812171', 'GTIN': '20923881447798', 'batch_number': 'Alexandra', 'expiry': '2030-08-12', 'manufacturing_date': '202...</msg>
+<var>${DIC_ITEM_1_CASE_5}</var>
+<arg>barcode=${ITEM_BARCODE_ITEM_1_CASE_5_VALUE}</arg>
+<arg>parent1=${CASE_1_BARCODE_ITEM_1_CASE_5_VALUE}</arg>
+<arg>parent2=${INVENTORY_1_BARCODE_ITEM_1_CASE_5_VALUE}</arg>
+<arg>GTIN=${GTIN_ITEM_1_CASE_5_VALUE}</arg>
+<arg>batch_number=${BATCH_NUMBER_ITEM_1_CASE_5_VALUE}</arg>
+<arg>expiry=${EXPIRY_DATE_VALUE}</arg>
+<arg>manufacturing_date=${MANUFACTORING_DATE_VALUE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.353676" elapsed="0.000000"/>
+</kw>
+<kw name="Update Value To Json" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.374930" level="INFO">${BARCODE_VALUES_ITEM_1_CASE_5_FROM_JSON} = {'referenceId': '', 'data': [{'barcode': '8398540167081', 'parent1': '994686106954188348', 'parent2': '072506449122812171', 'GTIN': '20923881447798', 'batch_number': 'Alexandra', 'expiry': '2030-08-12...</msg>
+<var>${BARCODE_VALUES_ITEM_1_CASE_5_FROM_JSON}</var>
+<arg>${DATA_FILE_ITEM_1_CASE_5}</arg>
+<arg>$.data[0]</arg>
+<arg>${DIC_ITEM_1_CASE_5}</arg>
+<doc>Update value to JSON using JSONPath</doc>
+<status status="PASS" start="2024-08-08T14:16:50.354640" elapsed="0.021318"/>
+</kw>
+<kw name="Dump Json To File" owner="JSONLibrary">
+<arg>${DATA_FILE_CASE_5_PATH_VALUE}</arg>
+<arg>${BARCODE_VALUES_ITEM_1_CASE_5_FROM_JSON}</arg>
+<doc>Dump JSON to file</doc>
+<status status="PASS" start="2024-08-08T14:16:50.375958" elapsed="0.000000"/>
+</kw>
+<kw name="Load Json From File" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.376928" level="INFO">${DATA_FILE_ITEM_2_CASE_5} = {'referenceId': '', 'data': [{'barcode': '8398540167081', 'parent1': '994686106954188348', 'parent2': '072506449122812171', 'GTIN': '20923881447798', 'batch_number': 'Alexandra', 'expiry': '2030-08-12...</msg>
+<var>${DATA_FILE_ITEM_2_CASE_5}</var>
+<arg>${DATA_FILE_CASE_5_PATH_VALUE}</arg>
+<doc>Load JSON from file.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.376928" elapsed="0.000000"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.376928" level="INFO">${ITEM_BARCODE_ITEM_2_CASE_5_VALUE} = 2446010066053</msg>
+<var>${ITEM_BARCODE_ITEM_2_CASE_5_VALUE}</var>
+<arg>13</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.376928" elapsed="0.001029"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.377957" level="INFO">${ITEM_BARCODE_ITEM_2_CASE_5_VALUE} = 2446010066053</msg>
+<arg>${ITEM_BARCODE_ITEM_2_CASE_5_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.377957" elapsed="0.000000"/>
+</kw>
+<kw name="First Name" owner="FakerLibrary">
+<msg time="2024-08-08T14:16:50.378497" level="INFO">${BATCH_NUMBER_ITEM_2_CASE_5_VALUE} = Tammy</msg>
+<var>${BATCH_NUMBER_ITEM_2_CASE_5_VALUE}</var>
+<status status="PASS" start="2024-08-08T14:16:50.378497" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.378497" level="INFO">${BATCH_NUMBER_ITEM_2_CASE_5_VALUE} = Tammy</msg>
+<arg>${BATCH_NUMBER_ITEM_2_CASE_5_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.378497" elapsed="0.000000"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.379538" level="INFO">${DIC_ITEM_2_CASE_5} = {'barcode': '2446010066053', 'parent1': '994686106954188348', 'parent2': '072506449122812171', 'GTIN': '20923881447798', 'batch_number': 'Tammy', 'expiry': '2030-08-12', 'manufacturing_date': '2020-08...</msg>
+<var>${DIC_ITEM_2_CASE_5}</var>
+<arg>barcode=${ITEM_BARCODE_ITEM_2_CASE_5_VALUE}</arg>
+<arg>parent1=${CASE_1_BARCODE_ITEM_1_CASE_5_VALUE}</arg>
+<arg>parent2=${INVENTORY_1_BARCODE_ITEM_1_CASE_5_VALUE}</arg>
+<arg>GTIN=${GTIN_ITEM_1_CASE_5_VALUE}</arg>
+<arg>batch_number=${BATCH_NUMBER_ITEM_2_CASE_5_VALUE}</arg>
+<arg>expiry=${EXPIRY_DATE_VALUE}</arg>
+<arg>manufacturing_date=${MANUFACTORING_DATE_VALUE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.378497" elapsed="0.001041"/>
+</kw>
+<kw name="Update Value To Json" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.398890" level="INFO">${BARCODE_VALUES_ITEM_2_CASE_5_FROM_JSON} = {'referenceId': '', 'data': [{'barcode': '8398540167081', 'parent1': '994686106954188348', 'parent2': '072506449122812171', 'GTIN': '20923881447798', 'batch_number': 'Alexandra', 'expiry': '2030-08-12...</msg>
+<var>${BARCODE_VALUES_ITEM_2_CASE_5_FROM_JSON}</var>
+<arg>${DATA_FILE_ITEM_2_CASE_5}</arg>
+<arg>$.data[1]</arg>
+<arg>${DIC_ITEM_2_CASE_5}</arg>
+<doc>Update value to JSON using JSONPath</doc>
+<status status="PASS" start="2024-08-08T14:16:50.379538" elapsed="0.019352"/>
+</kw>
+<kw name="Dump Json To File" owner="JSONLibrary">
+<arg>${DATA_FILE_CASE_5_PATH_VALUE}</arg>
+<arg>${BARCODE_VALUES_ITEM_2_CASE_5_FROM_JSON}</arg>
+<doc>Dump JSON to file</doc>
+<status status="PASS" start="2024-08-08T14:16:50.399890" elapsed="0.000000"/>
+</kw>
+<kw name="Load Json From File" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.400885" level="INFO">${DATA_FILE_ITEM_3_CASE_5} = {'referenceId': '', 'data': [{'barcode': '8398540167081', 'parent1': '994686106954188348', 'parent2': '072506449122812171', 'GTIN': '20923881447798', 'batch_number': 'Alexandra', 'expiry': '2030-08-12...</msg>
+<var>${DATA_FILE_ITEM_3_CASE_5}</var>
+<arg>${DATA_FILE_CASE_5_PATH_VALUE}</arg>
+<doc>Load JSON from file.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.399890" elapsed="0.000995"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.400885" level="INFO">${ITEM_BARCODE_ITEM_3_CASE_5_VALUE} = 4550713295579</msg>
+<var>${ITEM_BARCODE_ITEM_3_CASE_5_VALUE}</var>
+<arg>13</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.400885" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.401883" level="INFO">${ITEM_BARCODE_ITEM_3_CASE_5_VALUE} = 4550713295579</msg>
+<arg>${ITEM_BARCODE_ITEM_3_CASE_5_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.401883" elapsed="0.000000"/>
+</kw>
+<kw name="First Name" owner="FakerLibrary">
+<msg time="2024-08-08T14:16:50.401883" level="INFO">${BATCH_NUMBER_ITEM_3_CASE_5_VALUE} = Timothy</msg>
+<var>${BATCH_NUMBER_ITEM_3_CASE_5_VALUE}</var>
+<status status="PASS" start="2024-08-08T14:16:50.401883" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.402883" level="INFO">${BATCH_NUMBER_ITEM_3_CASE_5_VALUE} = Timothy</msg>
+<arg>${BATCH_NUMBER_ITEM_3_CASE_5_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.401883" elapsed="0.001000"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.403846" level="INFO">${DIC_ITEM_3_CASE_5} = {'barcode': '4550713295579', 'parent1': '994686106954188348', 'parent2': '072506449122812171', 'GTIN': '20923881447798', 'batch_number': 'Timothy', 'expiry': '2030-08-12', 'manufacturing_date': '2020-...</msg>
+<var>${DIC_ITEM_3_CASE_5}</var>
+<arg>barcode=${ITEM_BARCODE_ITEM_3_CASE_5_VALUE}</arg>
+<arg>parent1=${CASE_1_BARCODE_ITEM_1_CASE_5_VALUE}</arg>
+<arg>parent2=${INVENTORY_1_BARCODE_ITEM_1_CASE_5_VALUE}</arg>
+<arg>GTIN=${GTIN_ITEM_1_CASE_5_VALUE}</arg>
+<arg>batch_number=${BATCH_NUMBER_ITEM_3_CASE_5_VALUE}</arg>
+<arg>expiry=${EXPIRY_DATE_VALUE}</arg>
+<arg>manufacturing_date=${MANUFACTORING_DATE_VALUE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.402883" elapsed="0.000963"/>
+</kw>
+<kw name="Update Value To Json" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.425090" level="INFO">${BARCODE_VALUES_ITEM_3_CASE_5_FROM_JSON} = {'referenceId': '', 'data': [{'barcode': '8398540167081', 'parent1': '994686106954188348', 'parent2': '072506449122812171', 'GTIN': '20923881447798', 'batch_number': 'Alexandra', 'expiry': '2030-08-12...</msg>
+<var>${BARCODE_VALUES_ITEM_3_CASE_5_FROM_JSON}</var>
+<arg>${DATA_FILE_ITEM_3_CASE_5}</arg>
+<arg>$.data[2]</arg>
+<arg>${DIC_ITEM_3_CASE_5}</arg>
+<doc>Update value to JSON using JSONPath</doc>
+<status status="PASS" start="2024-08-08T14:16:50.403846" elapsed="0.021244"/>
+</kw>
+<kw name="Dump Json To File" owner="JSONLibrary">
+<arg>${DATA_FILE_CASE_5_PATH_VALUE}</arg>
+<arg>${BARCODE_VALUES_ITEM_3_CASE_5_FROM_JSON}</arg>
+<doc>Dump JSON to file</doc>
+<status status="PASS" start="2024-08-08T14:16:50.425090" elapsed="0.000997"/>
+</kw>
+<status status="PASS" start="2024-08-08T14:16:50.346662" elapsed="0.079585"/>
+</kw>
+<kw name="Create Data Case 6 In Json File" owner="ShipmentFiles">
+<kw name="Normalize Path" owner="OperatingSystem">
+<msg time="2024-08-08T14:16:50.427279" level="INFO">${DATA_FILE_CASE_6_PATH_VALUE} = D:\Projects\Wes\Wes Automation\TestData\DataCase6.json</msg>
+<var>${DATA_FILE_CASE_6_PATH_VALUE}</var>
+<arg>${DATA_FILE_CASE_6_PATH_VALUE}</arg>
+<doc>Normalizes the given path.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.427279" elapsed="0.000000"/>
+</kw>
+<kw name="Load Json From File" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.428277" level="INFO">${DATA_FILE_ITEM_1_CASE_6} = {'referenceId': '', 'data': [{'barcode': '6670296848715', 'parent1': '897017474773639746', 'parent2': '511461545379175202', 'GTIN': '39460990856782', 'batch_number': 'Kenneth', 'expiry': '2030-08-12',...</msg>
+<var>${DATA_FILE_ITEM_1_CASE_6}</var>
+<arg>${DATA_FILE_CASE_6_PATH_VALUE}</arg>
+<doc>Load JSON from file.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.427279" elapsed="0.000998"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.428277" level="INFO">${INVENTORY_1_BARCODE_ITEM_1_CASE_6_VALUE} = 730321194533125942</msg>
+<var>${INVENTORY_1_BARCODE_ITEM_1_CASE_6_VALUE}</var>
+<arg>18</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.428277" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.428277" level="INFO">${INVENTORY_1_BARCODE_ITEM_1_CASE_6_VALUE} = 730321194533125942</msg>
+<arg>${INVENTORY_1_BARCODE_ITEM_1_CASE_6_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.428277" elapsed="0.000000"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.429272" level="INFO">${CASE_1_BARCODE_ITEM_1_CASE_6_VALUE} = 939548502107178245</msg>
+<var>${CASE_1_BARCODE_ITEM_1_CASE_6_VALUE}</var>
+<arg>18</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.429272" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.429272" level="INFO">${CASE_1_BARCODE_ITEM_1_CASE_6_VALUE} = 939548502107178245</msg>
+<arg>${CASE_1_BARCODE_ITEM_1_CASE_6_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.429272" elapsed="0.000000"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.430273" level="INFO">${ITEM_BARCODE_ITEM_1_CASE_6_VALUE} = 5340696272151</msg>
+<var>${ITEM_BARCODE_ITEM_1_CASE_6_VALUE}</var>
+<arg>13</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.429272" elapsed="0.001001"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.430273" level="INFO">${ITEM_BARCODE_ITEM_1_CASE_6_VALUE} = 5340696272151</msg>
+<arg>${ITEM_BARCODE_ITEM_1_CASE_6_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.430273" elapsed="0.000000"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.430273" level="INFO">${GTIN_ITEM_1_CASE_6_VALUE} = 20554428492097</msg>
+<var>${GTIN_ITEM_1_CASE_6_VALUE}</var>
+<arg>14</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.430273" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.431267" level="INFO">${GTIN_ITEM_1_CASE_6_VALUE} = 20554428492097</msg>
+<arg>${GTIN_ITEM_1_CASE_6_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.431267" elapsed="0.000000"/>
+</kw>
+<kw name="First Name" owner="FakerLibrary">
+<msg time="2024-08-08T14:16:50.431267" level="INFO">${BATCH_NUMBER_ITEM_1_CASE_6_VALUE} = Thomas</msg>
+<var>${BATCH_NUMBER_ITEM_1_CASE_6_VALUE}</var>
+<status status="PASS" start="2024-08-08T14:16:50.431267" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.432264" level="INFO">${BATCH_NUMBER_ITEM_1_CASE_6_VALUE} = Thomas</msg>
+<arg>${BATCH_NUMBER_ITEM_1_CASE_6_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.431267" elapsed="0.000997"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.432264" level="INFO">${DIC_ITEM_1_CASE_6} = {'barcode': '5340696272151', 'parent1': '939548502107178245', 'parent2': '730321194533125942', 'GTIN': '20554428492097', 'batch_number': 'Thomas', 'expiry': '2030-08-12', 'manufacturing_date': '2020-0...</msg>
+<var>${DIC_ITEM_1_CASE_6}</var>
+<arg>barcode=${ITEM_BARCODE_ITEM_1_CASE_6_VALUE}</arg>
+<arg>parent1=${CASE_1_BARCODE_ITEM_1_CASE_6_VALUE}</arg>
+<arg>parent2=${INVENTORY_1_BARCODE_ITEM_1_CASE_6_VALUE}</arg>
+<arg>GTIN=${GTIN_ITEM_1_CASE_6_VALUE}</arg>
+<arg>batch_number=${BATCH_NUMBER_ITEM_1_CASE_6_VALUE}</arg>
+<arg>expiry=${EXPIRY_DATE_VALUE}</arg>
+<arg>manufacturing_date=${MANUFACTORING_DATE_VALUE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.432264" elapsed="0.000000"/>
+</kw>
+<kw name="Update Value To Json" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.459538" level="INFO">${BARCODE_VALUES_ITEM_1_CASE_6_FROM_JSON} = {'referenceId': '', 'data': [{'barcode': '5340696272151', 'parent1': '939548502107178245', 'parent2': '730321194533125942', 'GTIN': '20554428492097', 'batch_number': 'Thomas', 'expiry': '2030-08-12', ...</msg>
+<var>${BARCODE_VALUES_ITEM_1_CASE_6_FROM_JSON}</var>
+<arg>${DATA_FILE_ITEM_1_CASE_6}</arg>
+<arg>$.data[0]</arg>
+<arg>${DIC_ITEM_1_CASE_6}</arg>
+<doc>Update value to JSON using JSONPath</doc>
+<status status="PASS" start="2024-08-08T14:16:50.433264" elapsed="0.026274"/>
+</kw>
+<kw name="Dump Json To File" owner="JSONLibrary">
+<arg>${DATA_FILE_CASE_6_PATH_VALUE}</arg>
+<arg>${BARCODE_VALUES_ITEM_1_CASE_6_FROM_JSON}</arg>
+<doc>Dump JSON to file</doc>
+<status status="PASS" start="2024-08-08T14:16:50.459538" elapsed="0.000998"/>
+</kw>
+<kw name="Load Json From File" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.460536" level="INFO">${DATA_FILE_ITEM_2_CASE_6} = {'referenceId': '', 'data': [{'barcode': '5340696272151', 'parent1': '939548502107178245', 'parent2': '730321194533125942', 'GTIN': '20554428492097', 'batch_number': 'Thomas', 'expiry': '2030-08-12', ...</msg>
+<var>${DATA_FILE_ITEM_2_CASE_6}</var>
+<arg>${DATA_FILE_CASE_6_PATH_VALUE}</arg>
+<doc>Load JSON from file.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.460536" elapsed="0.000000"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.461533" level="INFO">${ITEM_BARCODE_ITEM_2_CASE_6_VALUE} = 0235829731574</msg>
+<var>${ITEM_BARCODE_ITEM_2_CASE_6_VALUE}</var>
+<arg>13</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.460536" elapsed="0.000997"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.461533" level="INFO">${ITEM_BARCODE_ITEM_2_CASE_6_VALUE} = 0235829731574</msg>
+<arg>${ITEM_BARCODE_ITEM_2_CASE_6_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.461533" elapsed="0.000000"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.462530" level="INFO">${GTIN_ITEM_2_CASE_6_VALUE} = 61168910520421</msg>
+<var>${GTIN_ITEM_2_CASE_6_VALUE}</var>
+<arg>14</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.461533" elapsed="0.000997"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.462530" level="INFO">${GTIN_ITEM_2_CASE_6_VALUE} = 61168910520421</msg>
+<arg>${GTIN_ITEM_2_CASE_6_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.462530" elapsed="0.000000"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.463530" level="INFO">${DIC_ITEM_2_CASE_6} = {'barcode': '0235829731574', 'parent1': '939548502107178245', 'parent2': '730321194533125942', 'GTIN': '61168910520421', 'batch_number': 'Thomas', 'expiry': '2030-08-12', 'manufacturing_date': '2020-0...</msg>
+<var>${DIC_ITEM_2_CASE_6}</var>
+<arg>barcode=${ITEM_BARCODE_ITEM_2_CASE_6_VALUE}</arg>
+<arg>parent1=${CASE_1_BARCODE_ITEM_1_CASE_6_VALUE}</arg>
+<arg>parent2=${INVENTORY_1_BARCODE_ITEM_1_CASE_6_VALUE}</arg>
+<arg>GTIN=${GTIN_ITEM_2_CASE_6_VALUE}</arg>
+<arg>batch_number=${BATCH_NUMBER_ITEM_1_CASE_6_VALUE}</arg>
+<arg>expiry=${EXPIRY_DATE_VALUE}</arg>
+<arg>manufacturing_date=${MANUFACTORING_DATE_VALUE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.462530" elapsed="0.001000"/>
+</kw>
+<kw name="Update Value To Json" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.485093" level="INFO">${BARCODE_VALUES_ITEM_2_CASE_6_FROM_JSON} = {'referenceId': '', 'data': [{'barcode': '5340696272151', 'parent1': '939548502107178245', 'parent2': '730321194533125942', 'GTIN': '20554428492097', 'batch_number': 'Thomas', 'expiry': '2030-08-12', ...</msg>
+<var>${BARCODE_VALUES_ITEM_2_CASE_6_FROM_JSON}</var>
+<arg>${DATA_FILE_ITEM_2_CASE_6}</arg>
+<arg>$.data[1]</arg>
+<arg>${DIC_ITEM_2_CASE_6}</arg>
+<doc>Update value to JSON using JSONPath</doc>
+<status status="PASS" start="2024-08-08T14:16:50.464529" elapsed="0.020564"/>
+</kw>
+<kw name="Dump Json To File" owner="JSONLibrary">
+<arg>${DATA_FILE_CASE_6_PATH_VALUE}</arg>
+<arg>${BARCODE_VALUES_ITEM_2_CASE_6_FROM_JSON}</arg>
+<doc>Dump JSON to file</doc>
+<status status="PASS" start="2024-08-08T14:16:50.485093" elapsed="0.000965"/>
+</kw>
+<kw name="Load Json From File" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.486058" level="INFO">${DATA_FILE_ITEM_3_CASE_6} = {'referenceId': '', 'data': [{'barcode': '5340696272151', 'parent1': '939548502107178245', 'parent2': '730321194533125942', 'GTIN': '20554428492097', 'batch_number': 'Thomas', 'expiry': '2030-08-12', ...</msg>
+<var>${DATA_FILE_ITEM_3_CASE_6}</var>
+<arg>${DATA_FILE_CASE_6_PATH_VALUE}</arg>
+<doc>Load JSON from file.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.486058" elapsed="0.000000"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.487085" level="INFO">${ITEM_BARCODE_ITEM_3_CASE_6_VALUE} = 0776079386168</msg>
+<var>${ITEM_BARCODE_ITEM_3_CASE_6_VALUE}</var>
+<arg>13</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.486058" elapsed="0.001027"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.487085" level="INFO">${ITEM_BARCODE_ITEM_3_CASE_6_VALUE} = 0776079386168</msg>
+<arg>${ITEM_BARCODE_ITEM_3_CASE_6_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.487085" elapsed="0.000000"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.488087" level="INFO">${GTIN_ITEM_3_CASE_6_VALUE} = 23510997086044</msg>
+<var>${GTIN_ITEM_3_CASE_6_VALUE}</var>
+<arg>14</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.487085" elapsed="0.001002"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.488087" level="INFO">${GTIN_ITEM_3_CASE_6_VALUE} = 23510997086044</msg>
+<arg>${GTIN_ITEM_3_CASE_6_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.488087" elapsed="0.000000"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.489050" level="INFO">${DIC_ITEM_3_CASE_6} = {'barcode': '0776079386168', 'parent1': '939548502107178245', 'parent2': '730321194533125942', 'GTIN': '23510997086044', 'batch_number': 'Thomas', 'expiry': '2030-08-12', 'manufacturing_date': '2020-0...</msg>
+<var>${DIC_ITEM_3_CASE_6}</var>
+<arg>barcode=${ITEM_BARCODE_ITEM_3_CASE_6_VALUE}</arg>
+<arg>parent1=${CASE_1_BARCODE_ITEM_1_CASE_6_VALUE}</arg>
+<arg>parent2=${INVENTORY_1_BARCODE_ITEM_1_CASE_6_VALUE}</arg>
+<arg>GTIN=${GTIN_ITEM_3_CASE_6_VALUE}</arg>
+<arg>batch_number=${BATCH_NUMBER_ITEM_1_CASE_6_VALUE}</arg>
+<arg>expiry=${EXPIRY_DATE_VALUE}</arg>
+<arg>manufacturing_date=${MANUFACTORING_DATE_VALUE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.489050" elapsed="0.000000"/>
+</kw>
+<kw name="Update Value To Json" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.509386" level="INFO">${BARCODE_VALUES_ITEM_3_CASE_6_FROM_JSON} = {'referenceId': '', 'data': [{'barcode': '5340696272151', 'parent1': '939548502107178245', 'parent2': '730321194533125942', 'GTIN': '20554428492097', 'batch_number': 'Thomas', 'expiry': '2030-08-12', ...</msg>
+<var>${BARCODE_VALUES_ITEM_3_CASE_6_FROM_JSON}</var>
+<arg>${DATA_FILE_ITEM_3_CASE_6}</arg>
+<arg>$.data[2]</arg>
+<arg>${DIC_ITEM_3_CASE_6}</arg>
+<doc>Update value to JSON using JSONPath</doc>
+<status status="PASS" start="2024-08-08T14:16:50.489050" elapsed="0.020336"/>
+</kw>
+<kw name="Dump Json To File" owner="JSONLibrary">
+<arg>${DATA_FILE_CASE_6_PATH_VALUE}</arg>
+<arg>${BARCODE_VALUES_ITEM_3_CASE_6_FROM_JSON}</arg>
+<doc>Dump JSON to file</doc>
+<status status="PASS" start="2024-08-08T14:16:50.509386" elapsed="0.000962"/>
+</kw>
+<status status="PASS" start="2024-08-08T14:16:50.426247" elapsed="0.084101"/>
+</kw>
+<kw name="Create Data Case 7 In Json File" owner="ShipmentFiles">
+<kw name="Normalize Path" owner="OperatingSystem">
+<msg time="2024-08-08T14:16:50.512345" level="INFO">${DATA_FILE_CASE_7_PATH_VALUE} = D:\Projects\Wes\Wes Automation\TestData\DataCase7.json</msg>
+<var>${DATA_FILE_CASE_7_PATH_VALUE}</var>
+<arg>${DATA_FILE_CASE_7_PATH_VALUE}</arg>
+<doc>Normalizes the given path.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.512345" elapsed="0.000000"/>
+</kw>
+<kw name="Load Json From File" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.513375" level="INFO">${DATA_FILE_ITEM_1_CASE_7} = {'referenceId': '', 'data': [{'barcode': '5040982330529', 'parent1': '448412408973343460', 'parent2': '397256412781145311', 'GTIN': '05084074603985', 'batch_number': 'Patrick', 'expiry': '2030-08-12',...</msg>
+<var>${DATA_FILE_ITEM_1_CASE_7}</var>
+<arg>${DATA_FILE_CASE_7_PATH_VALUE}</arg>
+<doc>Load JSON from file.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.512345" elapsed="0.001030"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.513375" level="INFO">${INVENTORY_1_BARCODE_ITEM_1_CASE_7_VALUE} = 841209545508353620</msg>
+<var>${INVENTORY_1_BARCODE_ITEM_1_CASE_7_VALUE}</var>
+<arg>18</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.513375" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.514373" level="INFO">${INVENTORY_1_BARCODE_ITEM_1_CASE_7_VALUE} = 841209545508353620</msg>
+<arg>${INVENTORY_1_BARCODE_ITEM_1_CASE_7_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.513375" elapsed="0.000998"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.514373" level="INFO">${CASE_1_BARCODE_ITEM_1_CASE_7_VALUE} = 476338892438549148</msg>
+<var>${CASE_1_BARCODE_ITEM_1_CASE_7_VALUE}</var>
+<arg>18</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.514373" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.514373" level="INFO">${CASE_1_BARCODE_ITEM_1_CASE_7_VALUE} = 476338892438549148</msg>
+<arg>${CASE_1_BARCODE_ITEM_1_CASE_7_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.514373" elapsed="0.000996"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.515554" level="INFO">${ITEM_BARCODE_ITEM_1_CASE_7_VALUE} = 4302591972277</msg>
+<var>${ITEM_BARCODE_ITEM_1_CASE_7_VALUE}</var>
+<arg>13</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.515423" elapsed="0.000131"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.515554" level="INFO">${ITEM_BARCODE_ITEM_1_CASE_7_VALUE} = 4302591972277</msg>
+<arg>${ITEM_BARCODE_ITEM_1_CASE_7_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.515554" elapsed="0.000000"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.515554" level="INFO">${GTIN_ITEM_1_CASE_7_VALUE} = 62733909150648</msg>
+<var>${GTIN_ITEM_1_CASE_7_VALUE}</var>
+<arg>14</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.515554" elapsed="0.001032"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.516586" level="INFO">${GTIN_ITEM_1_CASE_7_VALUE} = 62733909150648</msg>
+<arg>${GTIN_ITEM_1_CASE_7_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.516586" elapsed="0.000000"/>
+</kw>
+<kw name="First Name" owner="FakerLibrary">
+<msg time="2024-08-08T14:16:50.516586" level="INFO">${BATCH_NUMBER_ITEM_1_CASE_7_VALUE} = Thomas</msg>
+<var>${BATCH_NUMBER_ITEM_1_CASE_7_VALUE}</var>
+<status status="PASS" start="2024-08-08T14:16:50.516586" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.517582" level="INFO">${BATCH_NUMBER_ITEM_1_CASE_7_VALUE} = Thomas</msg>
+<arg>${BATCH_NUMBER_ITEM_1_CASE_7_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.517582" elapsed="0.000000"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.517582" level="INFO">${DIC_ITEM_1_CASE_7} = {'barcode': '4302591972277', 'parent1': '476338892438549148', 'parent2': '841209545508353620', 'GTIN': '62733909150648', 'batch_number': 'Thomas', 'expiry': '2030-08-12', 'manufacturing_date': '2020-0...</msg>
+<var>${DIC_ITEM_1_CASE_7}</var>
+<arg>barcode=${ITEM_BARCODE_ITEM_1_CASE_7_VALUE}</arg>
+<arg>parent1=${CASE_1_BARCODE_ITEM_1_CASE_7_VALUE}</arg>
+<arg>parent2=${INVENTORY_1_BARCODE_ITEM_1_CASE_7_VALUE}</arg>
+<arg>GTIN=${GTIN_ITEM_1_CASE_7_VALUE}</arg>
+<arg>batch_number=${BATCH_NUMBER_ITEM_1_CASE_7_VALUE}</arg>
+<arg>expiry=${EXPIRY_DATE_VALUE}</arg>
+<arg>manufacturing_date=${MANUFACTORING_DATE_VALUE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.517582" elapsed="0.000997"/>
+</kw>
+<kw name="Update Value To Json" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.546060" level="INFO">${BARCODE_VALUES_ITEM_1_CASE_7_FROM_JSON} = {'referenceId': '', 'data': [{'barcode': '4302591972277', 'parent1': '476338892438549148', 'parent2': '841209545508353620', 'GTIN': '62733909150648', 'batch_number': 'Thomas', 'expiry': '2030-08-12', ...</msg>
+<var>${BARCODE_VALUES_ITEM_1_CASE_7_FROM_JSON}</var>
+<arg>${DATA_FILE_ITEM_1_CASE_7}</arg>
+<arg>$.data[0]</arg>
+<arg>${DIC_ITEM_1_CASE_7}</arg>
+<doc>Update value to JSON using JSONPath</doc>
+<status status="PASS" start="2024-08-08T14:16:50.518579" elapsed="0.027481"/>
+</kw>
+<kw name="Dump Json To File" owner="JSONLibrary">
+<arg>${DATA_FILE_CASE_7_PATH_VALUE}</arg>
+<arg>${BARCODE_VALUES_ITEM_1_CASE_7_FROM_JSON}</arg>
+<doc>Dump JSON to file</doc>
+<status status="PASS" start="2024-08-08T14:16:50.546060" elapsed="0.000998"/>
+</kw>
+<kw name="Load Json From File" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.547058" level="INFO">${DATA_FILE_ITEM_2_CASE_7} = {'referenceId': '', 'data': [{'barcode': '4302591972277', 'parent1': '476338892438549148', 'parent2': '841209545508353620', 'GTIN': '62733909150648', 'batch_number': 'Thomas', 'expiry': '2030-08-12', ...</msg>
+<var>${DATA_FILE_ITEM_2_CASE_7}</var>
+<arg>${DATA_FILE_CASE_7_PATH_VALUE}</arg>
+<doc>Load JSON from file.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.547058" elapsed="0.000000"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.548090" level="INFO">${ITEM_BARCODE_ITEM_2_CASE_7_VALUE} = 6739213917403</msg>
+<var>${ITEM_BARCODE_ITEM_2_CASE_7_VALUE}</var>
+<arg>13</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.547058" elapsed="0.001032"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.548090" level="INFO">${ITEM_BARCODE_ITEM_2_CASE_7_VALUE} = 6739213917403</msg>
+<arg>${ITEM_BARCODE_ITEM_2_CASE_7_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.548090" elapsed="0.000000"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.549085" level="INFO">${GTIN_ITEM_2_CASE_7_VALUE} = 23205734447407</msg>
+<var>${GTIN_ITEM_2_CASE_7_VALUE}</var>
+<arg>14</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.548090" elapsed="0.000995"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.549085" level="INFO">${GTIN_ITEM_2_CASE_7_VALUE} = 23205734447407</msg>
+<arg>${GTIN_ITEM_2_CASE_7_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.549085" elapsed="0.000000"/>
+</kw>
+<kw name="First Name" owner="FakerLibrary">
+<msg time="2024-08-08T14:16:50.549085" level="INFO">${BATCH_NUMBER_ITEM_2_CASE_7_VALUE} = John</msg>
+<var>${BATCH_NUMBER_ITEM_2_CASE_7_VALUE}</var>
+<status status="PASS" start="2024-08-08T14:16:50.549085" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.550079" level="INFO">${BATCH_NUMBER_ITEM_2_CASE_7_VALUE} = John</msg>
+<arg>${BATCH_NUMBER_ITEM_2_CASE_7_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.550079" elapsed="0.000000"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.550079" level="INFO">${DIC_ITEM_2_CASE_7} = {'barcode': '6739213917403', 'parent1': '476338892438549148', 'parent2': '841209545508353620', 'GTIN': '23205734447407', 'batch_number': 'John', 'expiry': '2030-08-12', 'manufacturing_date': '2020-08-...</msg>
+<var>${DIC_ITEM_2_CASE_7}</var>
+<arg>barcode=${ITEM_BARCODE_ITEM_2_CASE_7_VALUE}</arg>
+<arg>parent1=${CASE_1_BARCODE_ITEM_1_CASE_7_VALUE}</arg>
+<arg>parent2=${INVENTORY_1_BARCODE_ITEM_1_CASE_7_VALUE}</arg>
+<arg>GTIN=${GTIN_ITEM_2_CASE_7_VALUE}</arg>
+<arg>batch_number=${BATCH_NUMBER_ITEM_2_CASE_7_VALUE}</arg>
+<arg>expiry=${EXPIRY_DATE_VALUE}</arg>
+<arg>manufacturing_date=${MANUFACTORING_DATE_VALUE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.550079" elapsed="0.001001"/>
+</kw>
+<kw name="Update Value To Json" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.569495" level="INFO">${BARCODE_VALUES_ITEM_2_CASE_7_FROM_JSON} = {'referenceId': '', 'data': [{'barcode': '4302591972277', 'parent1': '476338892438549148', 'parent2': '841209545508353620', 'GTIN': '62733909150648', 'batch_number': 'Thomas', 'expiry': '2030-08-12', ...</msg>
+<var>${BARCODE_VALUES_ITEM_2_CASE_7_FROM_JSON}</var>
+<arg>${DATA_FILE_ITEM_2_CASE_7}</arg>
+<arg>$.data[1]</arg>
+<arg>${DIC_ITEM_2_CASE_7}</arg>
+<doc>Update value to JSON using JSONPath</doc>
+<status status="PASS" start="2024-08-08T14:16:50.551080" elapsed="0.018415"/>
+</kw>
+<kw name="Dump Json To File" owner="JSONLibrary">
+<arg>${DATA_FILE_CASE_7_PATH_VALUE}</arg>
+<arg>${BARCODE_VALUES_ITEM_2_CASE_7_FROM_JSON}</arg>
+<doc>Dump JSON to file</doc>
+<status status="PASS" start="2024-08-08T14:16:50.570494" elapsed="0.000000"/>
+</kw>
+<kw name="Load Json From File" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.572457" level="INFO">${DATA_FILE_ITEM_3_CASE_7} = {'referenceId': '', 'data': [{'barcode': '4302591972277', 'parent1': '476338892438549148', 'parent2': '841209545508353620', 'GTIN': '62733909150648', 'batch_number': 'Thomas', 'expiry': '2030-08-12', ...</msg>
+<var>${DATA_FILE_ITEM_3_CASE_7}</var>
+<arg>${DATA_FILE_CASE_7_PATH_VALUE}</arg>
+<doc>Load JSON from file.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.571456" elapsed="0.001001"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.573449" level="INFO">${ITEM_BARCODE_ITEM_3_CASE_7_VALUE} = 9836209118453</msg>
+<var>${ITEM_BARCODE_ITEM_3_CASE_7_VALUE}</var>
+<arg>13</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.572457" elapsed="0.000992"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.573449" level="INFO">${ITEM_BARCODE_ITEM_3_CASE_7_VALUE} = 9836209118453</msg>
+<arg>${ITEM_BARCODE_ITEM_3_CASE_7_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.573449" elapsed="0.000000"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.574450" level="INFO">${GTIN_ITEM_3_CASE_7_VALUE} = 80562120278652</msg>
+<var>${GTIN_ITEM_3_CASE_7_VALUE}</var>
+<arg>14</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.574450" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.574450" level="INFO">${GTIN_ITEM_3_CASE_7_VALUE} = 80562120278652</msg>
+<arg>${GTIN_ITEM_3_CASE_7_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.574450" elapsed="0.000000"/>
+</kw>
+<kw name="First Name" owner="FakerLibrary">
+<msg time="2024-08-08T14:16:50.575511" level="INFO">${BATCH_NUMBER_ITEM_3_CASE_7_VALUE} = Jacob</msg>
+<var>${BATCH_NUMBER_ITEM_3_CASE_7_VALUE}</var>
+<status status="PASS" start="2024-08-08T14:16:50.574450" elapsed="0.001185"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.575635" level="INFO">${BATCH_NUMBER_ITEM_3_CASE_7_VALUE} = Jacob</msg>
+<arg>${BATCH_NUMBER_ITEM_3_CASE_7_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.575635" elapsed="0.000000"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.576634" level="INFO">${DIC_ITEM_3_CASE_7} = {'barcode': '9836209118453', 'parent1': '476338892438549148', 'parent2': '841209545508353620', 'GTIN': '80562120278652', 'batch_number': 'Jacob', 'expiry': '2030-08-12', 'manufacturing_date': '2020-08...</msg>
+<var>${DIC_ITEM_3_CASE_7}</var>
+<arg>barcode=${ITEM_BARCODE_ITEM_3_CASE_7_VALUE}</arg>
+<arg>parent1=${CASE_1_BARCODE_ITEM_1_CASE_7_VALUE}</arg>
+<arg>parent2=${INVENTORY_1_BARCODE_ITEM_1_CASE_7_VALUE}</arg>
+<arg>GTIN=${GTIN_ITEM_3_CASE_7_VALUE}</arg>
+<arg>batch_number=${BATCH_NUMBER_ITEM_3_CASE_7_VALUE}</arg>
+<arg>expiry=${EXPIRY_DATE_VALUE}</arg>
+<arg>manufacturing_date=${MANUFACTORING_DATE_VALUE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.575635" elapsed="0.000999"/>
+</kw>
+<kw name="Update Value To Json" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.595248" level="INFO">${BARCODE_VALUES_ITEM_3_CASE_7_FROM_JSON} = {'referenceId': '', 'data': [{'barcode': '4302591972277', 'parent1': '476338892438549148', 'parent2': '841209545508353620', 'GTIN': '62733909150648', 'batch_number': 'Thomas', 'expiry': '2030-08-12', ...</msg>
+<var>${BARCODE_VALUES_ITEM_3_CASE_7_FROM_JSON}</var>
+<arg>${DATA_FILE_ITEM_3_CASE_7}</arg>
+<arg>$.data[2]</arg>
+<arg>${DIC_ITEM_3_CASE_7}</arg>
+<doc>Update value to JSON using JSONPath</doc>
+<status status="PASS" start="2024-08-08T14:16:50.576634" elapsed="0.018614"/>
+</kw>
+<kw name="Dump Json To File" owner="JSONLibrary">
+<arg>${DATA_FILE_CASE_7_PATH_VALUE}</arg>
+<arg>${BARCODE_VALUES_ITEM_3_CASE_7_FROM_JSON}</arg>
+<doc>Dump JSON to file</doc>
+<status status="PASS" start="2024-08-08T14:16:50.595248" elapsed="0.001218"/>
+</kw>
+<status status="PASS" start="2024-08-08T14:16:50.511349" elapsed="0.085117"/>
+</kw>
+<kw name="Create Data Case 8 In Json File" owner="ShipmentFiles">
+<kw name="Normalize Path" owner="OperatingSystem">
+<msg time="2024-08-08T14:16:50.597494" level="INFO">${DATA_FILE_CASE_8_PATH_VALUE} = D:\Projects\Wes\Wes Automation\TestData\DataCase8.json</msg>
+<var>${DATA_FILE_CASE_8_PATH_VALUE}</var>
+<arg>${DATA_FILE_CASE_8_PATH_VALUE}</arg>
+<doc>Normalizes the given path.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.597494" elapsed="0.000000"/>
+</kw>
+<kw name="Load Json From File" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.598492" level="INFO">${DATA_FILE_ITEM_1_CASE_8} = {'referenceId': '', 'data': [{'barcode': '9575082620613', 'parent1': '977524877287617428', 'parent2': '984913742135370587', 'parent3': '531542110836629324', 'GTIN': '73051531928537', 'batch_number': '...</msg>
+<var>${DATA_FILE_ITEM_1_CASE_8}</var>
+<arg>${DATA_FILE_CASE_8_PATH_VALUE}</arg>
+<doc>Load JSON from file.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.597494" elapsed="0.000998"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.598492" level="INFO">${INVENTORY_1_BARCODE_ITEM_1_CASE_8_VALUE} = 258202963184002769</msg>
+<var>${INVENTORY_1_BARCODE_ITEM_1_CASE_8_VALUE}</var>
+<arg>18</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.598492" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.598492" level="INFO">${INVENTORY_1_BARCODE_ITEM_1_CASE_8_VALUE} = 258202963184002769</msg>
+<arg>${INVENTORY_1_BARCODE_ITEM_1_CASE_8_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.598492" elapsed="0.000000"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.599492" level="INFO">${CASE_1_BARCODE_ITEM_1_CASE_8_VALUE} = 028621112094251378</msg>
+<var>${CASE_1_BARCODE_ITEM_1_CASE_8_VALUE}</var>
+<arg>18</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.599492" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.599492" level="INFO">${CASE_1_BARCODE_ITEM_1_CASE_8_VALUE} = 028621112094251378</msg>
+<arg>${CASE_1_BARCODE_ITEM_1_CASE_8_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.599492" elapsed="0.000000"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.600486" level="INFO">${CASE_2_BARCODE_ITEM_1_CASE_8_VALUE} = 199192313195532414</msg>
+<var>${CASE_2_BARCODE_ITEM_1_CASE_8_VALUE}</var>
+<arg>18</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.600486" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.600486" level="INFO">${CASE_2_BARCODE_ITEM_1_CASE_8_VALUE} = 199192313195532414</msg>
+<arg>${CASE_2_BARCODE_ITEM_1_CASE_8_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.600486" elapsed="0.000000"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.601484" level="INFO">${ITEM_BARCODE_ITEM_1_CASE_8_VALUE} = 9514595250207</msg>
+<var>${ITEM_BARCODE_ITEM_1_CASE_8_VALUE}</var>
+<arg>13</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.600486" elapsed="0.000998"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.601484" level="INFO">${ITEM_BARCODE_ITEM_1_CASE_8_VALUE} = 9514595250207</msg>
+<arg>${ITEM_BARCODE_ITEM_1_CASE_8_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.601484" elapsed="0.000000"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.601484" level="INFO">${GTIN_ITEM_1_CASE_8_VALUE} = 32922141412979</msg>
+<var>${GTIN_ITEM_1_CASE_8_VALUE}</var>
+<arg>14</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.601484" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.602484" level="INFO">${GTIN_ITEM_1_CASE_8_VALUE} = 32922141412979</msg>
+<arg>${GTIN_ITEM_1_CASE_8_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.601484" elapsed="0.001000"/>
+</kw>
+<kw name="First Name" owner="FakerLibrary">
+<msg time="2024-08-08T14:16:50.603448" level="INFO">${BATCH_NUMBER_ITEM_1_CASE_8_VALUE} = Shelly</msg>
+<var>${BATCH_NUMBER_ITEM_1_CASE_8_VALUE}</var>
+<status status="PASS" start="2024-08-08T14:16:50.602484" elapsed="0.000964"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.604444" level="INFO">${BATCH_NUMBER_ITEM_1_CASE_8_VALUE} = Shelly</msg>
+<arg>${BATCH_NUMBER_ITEM_1_CASE_8_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.603448" elapsed="0.000996"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.605635" level="INFO">${DIC_ITEM_1_CASE_8} = {'barcode': '9514595250207', 'parent1': '199192313195532414', 'parent2': '028621112094251378', 'parent3': '258202963184002769', 'GTIN': '32922141412979', 'batch_number': 'Shelly', 'expiry': '2030-08-1...</msg>
+<var>${DIC_ITEM_1_CASE_8}</var>
+<arg>barcode=${ITEM_BARCODE_ITEM_1_CASE_8_VALUE}</arg>
+<arg>parent1=${CASE_2_BARCODE_ITEM_1_CASE_8_VALUE}</arg>
+<arg>parent2=${CASE_1_BARCODE_ITEM_1_CASE_8_VALUE}</arg>
+<arg>parent3=${INVENTORY_1_BARCODE_ITEM_1_CASE_8_VALUE}</arg>
+<arg>GTIN=${GTIN_ITEM_1_CASE_8_VALUE}</arg>
+<arg>batch_number=${BATCH_NUMBER_ITEM_1_CASE_8_VALUE}</arg>
+<arg>expiry=${EXPIRY_DATE_VALUE}</arg>
+<arg>manufacturing_date=${MANUFACTORING_DATE_VALUE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.604444" elapsed="0.001191"/>
+</kw>
+<kw name="Update Value To Json" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.630008" level="INFO">${BARCODE_VALUES_ITEM_1_CASE_8_FROM_JSON} = {'referenceId': '', 'data': [{'barcode': '9514595250207', 'parent1': '199192313195532414', 'parent2': '028621112094251378', 'parent3': '258202963184002769', 'GTIN': '32922141412979', 'batch_number': '...</msg>
+<var>${BARCODE_VALUES_ITEM_1_CASE_8_FROM_JSON}</var>
+<arg>${DATA_FILE_ITEM_1_CASE_8}</arg>
+<arg>$.data[0]</arg>
+<arg>${DIC_ITEM_1_CASE_8}</arg>
+<doc>Update value to JSON using JSONPath</doc>
+<status status="PASS" start="2024-08-08T14:16:50.606635" elapsed="0.023373"/>
+</kw>
+<kw name="Dump Json To File" owner="JSONLibrary">
+<arg>${DATA_FILE_CASE_8_PATH_VALUE}</arg>
+<arg>${BARCODE_VALUES_ITEM_1_CASE_8_FROM_JSON}</arg>
+<doc>Dump JSON to file</doc>
+<status status="PASS" start="2024-08-08T14:16:50.630008" elapsed="0.000999"/>
+</kw>
+<kw name="Load Json From File" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.632005" level="INFO">${DATA_FILE_ITEM_2_CASE_8} = {'referenceId': '', 'data': [{'barcode': '9514595250207', 'parent1': '199192313195532414', 'parent2': '028621112094251378', 'parent3': '258202963184002769', 'GTIN': '32922141412979', 'batch_number': '...</msg>
+<var>${DATA_FILE_ITEM_2_CASE_8}</var>
+<arg>${DATA_FILE_CASE_8_PATH_VALUE}</arg>
+<doc>Load JSON from file.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.631007" elapsed="0.000998"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.633001" level="INFO">${ITEM_BARCODE_ITEM_2_CASE_8_VALUE} = 4210520104908</msg>
+<var>${ITEM_BARCODE_ITEM_2_CASE_8_VALUE}</var>
+<arg>13</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.632005" elapsed="0.000996"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.634960" level="INFO">${ITEM_BARCODE_ITEM_2_CASE_8_VALUE} = 4210520104908</msg>
+<arg>${ITEM_BARCODE_ITEM_2_CASE_8_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.633966" elapsed="0.000994"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.636114" level="INFO">${DIC_ITEM_2_CASE_8} = {'barcode': '4210520104908', 'parent1': '199192313195532414', 'parent2': '028621112094251378', 'parent3': '258202963184002769', 'GTIN': '32922141412979', 'batch_number': 'Shelly', 'expiry': '2030-08-1...</msg>
+<var>${DIC_ITEM_2_CASE_8}</var>
+<arg>barcode=${ITEM_BARCODE_ITEM_2_CASE_8_VALUE}</arg>
+<arg>parent1=${CASE_2_BARCODE_ITEM_1_CASE_8_VALUE}</arg>
+<arg>parent2=${CASE_1_BARCODE_ITEM_1_CASE_8_VALUE}</arg>
+<arg>parent3=${INVENTORY_1_BARCODE_ITEM_1_CASE_8_VALUE}</arg>
+<arg>GTIN=${GTIN_ITEM_1_CASE_8_VALUE}</arg>
+<arg>batch_number=${BATCH_NUMBER_ITEM_1_CASE_8_VALUE}</arg>
+<arg>expiry=${EXPIRY_DATE_VALUE}</arg>
+<arg>manufacturing_date=${MANUFACTORING_DATE_VALUE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.634960" elapsed="0.001154"/>
+</kw>
+<kw name="Update Value To Json" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.655262" level="INFO">${BARCODE_VALUES_ITEM_2_CASE_8_FROM_JSON} = {'referenceId': '', 'data': [{'barcode': '9514595250207', 'parent1': '199192313195532414', 'parent2': '028621112094251378', 'parent3': '258202963184002769', 'GTIN': '32922141412979', 'batch_number': '...</msg>
+<var>${BARCODE_VALUES_ITEM_2_CASE_8_FROM_JSON}</var>
+<arg>${DATA_FILE_ITEM_2_CASE_8}</arg>
+<arg>$.data[1]</arg>
+<arg>${DIC_ITEM_2_CASE_8}</arg>
+<doc>Update value to JSON using JSONPath</doc>
+<status status="PASS" start="2024-08-08T14:16:50.637146" elapsed="0.018116"/>
+</kw>
+<kw name="Dump Json To File" owner="JSONLibrary">
+<arg>${DATA_FILE_CASE_8_PATH_VALUE}</arg>
+<arg>${BARCODE_VALUES_ITEM_2_CASE_8_FROM_JSON}</arg>
+<doc>Dump JSON to file</doc>
+<status status="PASS" start="2024-08-08T14:16:50.656339" elapsed="0.000110"/>
+</kw>
+<kw name="Load Json From File" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.657482" level="INFO">${DATA_FILE_ITEM_3_CASE_8} = {'referenceId': '', 'data': [{'barcode': '9514595250207', 'parent1': '199192313195532414', 'parent2': '028621112094251378', 'parent3': '258202963184002769', 'GTIN': '32922141412979', 'batch_number': '...</msg>
+<var>${DATA_FILE_ITEM_3_CASE_8}</var>
+<arg>${DATA_FILE_CASE_8_PATH_VALUE}</arg>
+<doc>Load JSON from file.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.656449" elapsed="0.001033"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.657482" level="INFO">${ITEM_BARCODE_ITEM_3_CASE_8_VALUE} = 2936277967638</msg>
+<var>${ITEM_BARCODE_ITEM_3_CASE_8_VALUE}</var>
+<arg>13</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.657482" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.658479" level="INFO">${ITEM_BARCODE_ITEM_3_CASE_8_VALUE} = 2936277967638</msg>
+<arg>${ITEM_BARCODE_ITEM_3_CASE_8_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.658479" elapsed="0.000000"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.659476" level="INFO">${DIC_ITEM_3_CASE_8} = {'barcode': '2936277967638', 'parent1': '028621112094251378', 'parent2': '258202963184002769', 'GTIN': '32922141412979', 'batch_number': 'Shelly', 'expiry': '2030-08-12', 'manufacturing_date': '2020-0...</msg>
+<var>${DIC_ITEM_3_CASE_8}</var>
+<arg>barcode=${ITEM_BARCODE_ITEM_3_CASE_8_VALUE}</arg>
+<arg>parent1=${CASE_1_BARCODE_ITEM_1_CASE_8_VALUE}</arg>
+<arg>parent2=${INVENTORY_1_BARCODE_ITEM_1_CASE_8_VALUE}</arg>
+<arg>GTIN=${GTIN_ITEM_1_CASE_8_VALUE}</arg>
+<arg>batch_number=${BATCH_NUMBER_ITEM_1_CASE_8_VALUE}</arg>
+<arg>expiry=${EXPIRY_DATE_VALUE}</arg>
+<arg>manufacturing_date=${MANUFACTORING_DATE_VALUE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.658479" elapsed="0.000997"/>
+</kw>
+<kw name="Update Value To Json" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.684415" level="INFO">${BARCODE_VALUES_ITEM_3_CASE_8_FROM_JSON} = {'referenceId': '', 'data': [{'barcode': '9514595250207', 'parent1': '199192313195532414', 'parent2': '028621112094251378', 'parent3': '258202963184002769', 'GTIN': '32922141412979', 'batch_number': '...</msg>
+<var>${BARCODE_VALUES_ITEM_3_CASE_8_FROM_JSON}</var>
+<arg>${DATA_FILE_ITEM_3_CASE_8}</arg>
+<arg>$.data[2]</arg>
+<arg>${DIC_ITEM_3_CASE_8}</arg>
+<doc>Update value to JSON using JSONPath</doc>
+<status status="PASS" start="2024-08-08T14:16:50.659476" elapsed="0.025934"/>
+</kw>
+<kw name="Dump Json To File" owner="JSONLibrary">
+<arg>${DATA_FILE_CASE_8_PATH_VALUE}</arg>
+<arg>${BARCODE_VALUES_ITEM_3_CASE_8_FROM_JSON}</arg>
+<doc>Dump JSON to file</doc>
+<status status="PASS" start="2024-08-08T14:16:50.685590" elapsed="0.000999"/>
+</kw>
+<status status="PASS" start="2024-08-08T14:16:50.596466" elapsed="0.090123"/>
+</kw>
+<kw name="Create Data Case 9 In Json File" owner="ShipmentFiles">
+<kw name="Normalize Path" owner="OperatingSystem">
+<msg time="2024-08-08T14:16:50.687585" level="INFO">${DATA_FILE_CASE_9_PATH_VALUE} = D:\Projects\Wes\Wes Automation\TestData\DataCase9.json</msg>
+<var>${DATA_FILE_CASE_9_PATH_VALUE}</var>
+<arg>${DATA_FILE_CASE_9_PATH_VALUE}</arg>
+<doc>Normalizes the given path.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.687585" elapsed="0.000000"/>
+</kw>
+<kw name="Load Json From File" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.688585" level="INFO">${DATA_FILE_ITEM_1_CASE_9} = {'referenceId': '', 'data': [{'barcode': '9838871962732', 'parent1': '015022397165995202', 'parent2': '789744230386067074', 'GTIN': '65590867931456', 'batch_number': 'Sonya', 'expiry': '2030-08-12', '...</msg>
+<var>${DATA_FILE_ITEM_1_CASE_9}</var>
+<arg>${DATA_FILE_CASE_9_PATH_VALUE}</arg>
+<doc>Load JSON from file.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.688585" elapsed="0.000000"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.689582" level="INFO">${INVENTORY_1_BARCODE_ITEM_1_CASE_9_VALUE} = 957708185521249570</msg>
+<var>${INVENTORY_1_BARCODE_ITEM_1_CASE_9_VALUE}</var>
+<arg>18</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.688585" elapsed="0.000997"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.689582" level="INFO">${INVENTORY_1_BARCODE_ITEM_1_CASE_9_VALUE} = 957708185521249570</msg>
+<arg>${INVENTORY_1_BARCODE_ITEM_1_CASE_9_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.689582" elapsed="0.000000"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.689582" level="INFO">${CASE_1_BARCODE_ITEM_1_CASE_9_VALUE} = 169546230417421868</msg>
+<var>${CASE_1_BARCODE_ITEM_1_CASE_9_VALUE}</var>
+<arg>18</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.689582" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.690580" level="INFO">${CASE_1_BARCODE_ITEM_1_CASE_9_VALUE} = 169546230417421868</msg>
+<arg>${CASE_1_BARCODE_ITEM_1_CASE_9_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.690580" elapsed="0.000000"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.690580" level="INFO">${ITEM_BARCODE_ITEM_1_CASE_9_VALUE} = 0722427099213</msg>
+<var>${ITEM_BARCODE_ITEM_1_CASE_9_VALUE}</var>
+<arg>13</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.690580" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.691577" level="INFO">${ITEM_BARCODE_ITEM_1_CASE_9_VALUE} = 0722427099213</msg>
+<arg>${ITEM_BARCODE_ITEM_1_CASE_9_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.690580" elapsed="0.000997"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.691577" level="INFO">${GTIN_ITEM_1_CASE_9_VALUE} = 04898073445102</msg>
+<var>${GTIN_ITEM_1_CASE_9_VALUE}</var>
+<arg>14</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.691577" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.691577" level="INFO">${GTIN_ITEM_1_CASE_9_VALUE} = 04898073445102</msg>
+<arg>${GTIN_ITEM_1_CASE_9_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.691577" elapsed="0.000000"/>
+</kw>
+<kw name="First Name" owner="FakerLibrary">
+<msg time="2024-08-08T14:16:50.692575" level="INFO">${BATCH_NUMBER_ITEM_1_CASE_9_VALUE} = Katherine</msg>
+<var>${BATCH_NUMBER_ITEM_1_CASE_9_VALUE}</var>
+<status status="PASS" start="2024-08-08T14:16:50.692575" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.692575" level="INFO">${BATCH_NUMBER_ITEM_1_CASE_9_VALUE} = Katherine</msg>
+<arg>${BATCH_NUMBER_ITEM_1_CASE_9_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.692575" elapsed="0.000000"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.693571" level="INFO">${DIC_ITEM_1_CASE_9} = {'barcode': '0722427099213', 'parent1': '169546230417421868', 'parent2': '957708185521249570', 'GTIN': '04898073445102', 'batch_number': 'Katherine', 'expiry': '2030-08-12', 'manufacturing_date': '202...</msg>
+<var>${DIC_ITEM_1_CASE_9}</var>
+<arg>barcode=${ITEM_BARCODE_ITEM_1_CASE_9_VALUE}</arg>
+<arg>parent1=${CASE_1_BARCODE_ITEM_1_CASE_9_VALUE}</arg>
+<arg>parent2=${INVENTORY_1_BARCODE_ITEM_1_CASE_9_VALUE}</arg>
+<arg>GTIN=${GTIN_ITEM_1_CASE_9_VALUE}</arg>
+<arg>batch_number=${BATCH_NUMBER_ITEM_1_CASE_9_VALUE}</arg>
+<arg>expiry=${EXPIRY_DATE_VALUE}</arg>
+<arg>manufacturing_date=${MANUFACTORING_DATE_VALUE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.692575" elapsed="0.000996"/>
+</kw>
+<kw name="Update Value To Json" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.718060" level="INFO">${BARCODE_VALUES_ITEM_1_CASE_9_FROM_JSON} = {'referenceId': '', 'data': [{'barcode': '0722427099213', 'parent1': '169546230417421868', 'parent2': '957708185521249570', 'GTIN': '04898073445102', 'batch_number': 'Katherine', 'expiry': '2030-08-12...</msg>
+<var>${BARCODE_VALUES_ITEM_1_CASE_9_FROM_JSON}</var>
+<arg>${DATA_FILE_ITEM_1_CASE_9}</arg>
+<arg>$.data[0]</arg>
+<arg>${DIC_ITEM_1_CASE_9}</arg>
+<doc>Update value to JSON using JSONPath</doc>
+<status status="PASS" start="2024-08-08T14:16:50.693571" elapsed="0.024489"/>
+</kw>
+<kw name="Dump Json To File" owner="JSONLibrary">
+<arg>${DATA_FILE_CASE_9_PATH_VALUE}</arg>
+<arg>${BARCODE_VALUES_ITEM_1_CASE_9_FROM_JSON}</arg>
+<doc>Dump JSON to file</doc>
+<status status="PASS" start="2024-08-08T14:16:50.718060" elapsed="0.000997"/>
+</kw>
+<kw name="Load Json From File" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.720054" level="INFO">${DATA_FILE_ITEM_2_CASE_9} = {'referenceId': '', 'data': [{'barcode': '0722427099213', 'parent1': '169546230417421868', 'parent2': '957708185521249570', 'GTIN': '04898073445102', 'batch_number': 'Katherine', 'expiry': '2030-08-12...</msg>
+<var>${DATA_FILE_ITEM_2_CASE_9}</var>
+<arg>${DATA_FILE_CASE_9_PATH_VALUE}</arg>
+<doc>Load JSON from file.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.719057" elapsed="0.000997"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.721050" level="INFO">${ITEM_BARCODE_ITEM_2_CASE_9_VALUE} = 5298366022992</msg>
+<var>${ITEM_BARCODE_ITEM_2_CASE_9_VALUE}</var>
+<arg>13</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.720054" elapsed="0.000996"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.721050" level="INFO">${ITEM_BARCODE_ITEM_2_CASE_9_VALUE} = 5298366022992</msg>
+<arg>${ITEM_BARCODE_ITEM_2_CASE_9_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.721050" elapsed="0.001032"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.723079" level="INFO">${DIC_ITEM_2_CASE_9} = {'barcode': '5298366022992', 'parent1': '169546230417421868', 'parent2': '957708185521249570', 'GTIN': '04898073445102', 'batch_number': 'Katherine', 'expiry': '2030-08-12', 'manufacturing_date': '202...</msg>
+<var>${DIC_ITEM_2_CASE_9}</var>
+<arg>barcode=${ITEM_BARCODE_ITEM_2_CASE_9_VALUE}</arg>
+<arg>parent1=${CASE_1_BARCODE_ITEM_1_CASE_9_VALUE}</arg>
+<arg>parent2=${INVENTORY_1_BARCODE_ITEM_1_CASE_9_VALUE}</arg>
+<arg>GTIN=${GTIN_ITEM_1_CASE_9_VALUE}</arg>
+<arg>batch_number=${BATCH_NUMBER_ITEM_1_CASE_9_VALUE}</arg>
+<arg>expiry=${EXPIRY_DATE_VALUE}</arg>
+<arg>manufacturing_date=${MANUFACTORING_DATE_VALUE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.722082" elapsed="0.000997"/>
+</kw>
+<kw name="Update Value To Json" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.745675" level="INFO">${BARCODE_VALUES_ITEM_2_CASE_9_FROM_JSON} = {'referenceId': '', 'data': [{'barcode': '0722427099213', 'parent1': '169546230417421868', 'parent2': '957708185521249570', 'GTIN': '04898073445102', 'batch_number': 'Katherine', 'expiry': '2030-08-12...</msg>
+<var>${BARCODE_VALUES_ITEM_2_CASE_9_FROM_JSON}</var>
+<arg>${DATA_FILE_ITEM_2_CASE_9}</arg>
+<arg>$.data[1]</arg>
+<arg>${DIC_ITEM_2_CASE_9}</arg>
+<doc>Update value to JSON using JSONPath</doc>
+<status status="PASS" start="2024-08-08T14:16:50.723079" elapsed="0.022596"/>
+</kw>
+<kw name="Dump Json To File" owner="JSONLibrary">
+<arg>${DATA_FILE_CASE_9_PATH_VALUE}</arg>
+<arg>${BARCODE_VALUES_ITEM_2_CASE_9_FROM_JSON}</arg>
+<doc>Dump JSON to file</doc>
+<status status="PASS" start="2024-08-08T14:16:50.745675" elapsed="0.000997"/>
+</kw>
+<kw name="Load Json From File" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.746672" level="INFO">${DATA_FILE_ITEM_3_CASE_9} = {'referenceId': '', 'data': [{'barcode': '0722427099213', 'parent1': '169546230417421868', 'parent2': '957708185521249570', 'GTIN': '04898073445102', 'batch_number': 'Katherine', 'expiry': '2030-08-12...</msg>
+<var>${DATA_FILE_ITEM_3_CASE_9}</var>
+<arg>${DATA_FILE_CASE_9_PATH_VALUE}</arg>
+<doc>Load JSON from file.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.746672" elapsed="0.000998"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.747670" level="INFO">${INVENTORY_2_BARCODE_ITEM_3_CASE_9_VALUE} = 052878549378008703</msg>
+<var>${INVENTORY_2_BARCODE_ITEM_3_CASE_9_VALUE}</var>
+<arg>18</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.747670" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.747670" level="INFO">${INVENTORY_2_BARCODE_ITEM_3_CASE_9_VALUE} = 052878549378008703</msg>
+<arg>${INVENTORY_2_BARCODE_ITEM_3_CASE_9_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.747670" elapsed="0.001031"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.748701" level="INFO">${CASE_2_BARCODE_ITEM_3_CASE_9_VALUE} = 390737114858561433</msg>
+<var>${CASE_2_BARCODE_ITEM_3_CASE_9_VALUE}</var>
+<arg>18</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.748701" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.748701" level="INFO">${CASE_2_BARCODE_ITEM_3_CASE_9_VALUE} = 390737114858561433</msg>
+<arg>${CASE_2_BARCODE_ITEM_3_CASE_9_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.748701" elapsed="0.000000"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.749690" level="INFO">${ITEM_BARCODE_ITEM_3_CASE_9_VALUE} = 6379099361077</msg>
+<var>${ITEM_BARCODE_ITEM_3_CASE_9_VALUE}</var>
+<arg>13</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.748701" elapsed="0.000989"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.749690" level="INFO">${ITEM_BARCODE_ITEM_3_CASE_9_VALUE} = 6379099361077</msg>
+<arg>${ITEM_BARCODE_ITEM_3_CASE_9_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.749690" elapsed="0.000000"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.750689" level="INFO">${GTIN_ITEM_3_CASE_9_VALUE} = 26456550588242</msg>
+<var>${GTIN_ITEM_3_CASE_9_VALUE}</var>
+<arg>14</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.749690" elapsed="0.000999"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.750689" level="INFO">${GTIN_ITEM_3_CASE_9_VALUE} = 26456550588242</msg>
+<arg>${GTIN_ITEM_3_CASE_9_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.750689" elapsed="0.000000"/>
+</kw>
+<kw name="First Name" owner="FakerLibrary">
+<msg time="2024-08-08T14:16:50.751660" level="INFO">${BATCH_NUMBER_ITEM_3_CASE_9_VALUE} = Cody</msg>
+<var>${BATCH_NUMBER_ITEM_3_CASE_9_VALUE}</var>
+<status status="PASS" start="2024-08-08T14:16:50.751660" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.752657" level="INFO">${BATCH_NUMBER_ITEM_3_CASE_9_VALUE} = Cody</msg>
+<arg>${BATCH_NUMBER_ITEM_3_CASE_9_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.751660" elapsed="0.000997"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.753655" level="INFO">${DIC_ITEM_3_CASE_9} = {'barcode': '6379099361077', 'parent1': '390737114858561433', 'parent2': '052878549378008703', 'GTIN': '26456550588242', 'batch_number': 'Cody', 'expiry': '2030-08-12', 'manufacturing_date': '2020-08-...</msg>
+<var>${DIC_ITEM_3_CASE_9}</var>
+<arg>barcode=${ITEM_BARCODE_ITEM_3_CASE_9_VALUE}</arg>
+<arg>parent1=${CASE_2_BARCODE_ITEM_3_CASE_9_VALUE}</arg>
+<arg>parent2=${INVENTORY_2_BARCODE_ITEM_3_CASE_9_VALUE}</arg>
+<arg>GTIN=${GTIN_ITEM_3_CASE_9_VALUE}</arg>
+<arg>batch_number=${BATCH_NUMBER_ITEM_3_CASE_9_VALUE}</arg>
+<arg>expiry=${EXPIRY_DATE_VALUE}</arg>
+<arg>manufacturing_date=${MANUFACTORING_DATE_VALUE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.752657" elapsed="0.000998"/>
+</kw>
+<kw name="Update Value To Json" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.807047" level="INFO">${BARCODE_VALUES_ITEM_3_CASE_9_FROM_JSON} = {'referenceId': '', 'data': [{'barcode': '0722427099213', 'parent1': '169546230417421868', 'parent2': '957708185521249570', 'GTIN': '04898073445102', 'batch_number': 'Katherine', 'expiry': '2030-08-12...</msg>
+<var>${BARCODE_VALUES_ITEM_3_CASE_9_FROM_JSON}</var>
+<arg>${DATA_FILE_ITEM_3_CASE_9}</arg>
+<arg>$.data[2]</arg>
+<arg>${DIC_ITEM_3_CASE_9}</arg>
+<doc>Update value to JSON using JSONPath</doc>
+<status status="PASS" start="2024-08-08T14:16:50.753655" elapsed="0.053392"/>
+</kw>
+<kw name="Dump Json To File" owner="JSONLibrary">
+<arg>${DATA_FILE_CASE_9_PATH_VALUE}</arg>
+<arg>${BARCODE_VALUES_ITEM_3_CASE_9_FROM_JSON}</arg>
+<doc>Dump JSON to file</doc>
+<status status="PASS" start="2024-08-08T14:16:50.808043" elapsed="0.000000"/>
+</kw>
+<kw name="Load Json From File" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.809042" level="INFO">${DATA_FILE_ITEM_4_CASE_9} = {'referenceId': '', 'data': [{'barcode': '0722427099213', 'parent1': '169546230417421868', 'parent2': '957708185521249570', 'GTIN': '04898073445102', 'batch_number': 'Katherine', 'expiry': '2030-08-12...</msg>
+<var>${DATA_FILE_ITEM_4_CASE_9}</var>
+<arg>${DATA_FILE_CASE_9_PATH_VALUE}</arg>
+<doc>Load JSON from file.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.808043" elapsed="0.000999"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.809042" level="INFO">${ITEM_BARCODE_ITEM_4_CASE_9_VALUE} = 4103184786877</msg>
+<var>${ITEM_BARCODE_ITEM_4_CASE_9_VALUE}</var>
+<arg>13</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.809042" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.810039" level="INFO">${ITEM_BARCODE_ITEM_4_CASE_9_VALUE} = 4103184786877</msg>
+<arg>${ITEM_BARCODE_ITEM_4_CASE_9_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.810039" elapsed="0.000000"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.811036" level="INFO">${DIC_ITEM_4_CASE_9} = {'barcode': '4103184786877', 'parent1': '390737114858561433', 'parent2': '052878549378008703', 'GTIN': '26456550588242', 'batch_number': 'Cody', 'expiry': '2030-08-12', 'manufacturing_date': '2020-08-...</msg>
+<var>${DIC_ITEM_4_CASE_9}</var>
+<arg>barcode=${ITEM_BARCODE_ITEM_4_CASE_9_VALUE}</arg>
+<arg>parent1=${CASE_2_BARCODE_ITEM_3_CASE_9_VALUE}</arg>
+<arg>parent2=${INVENTORY_2_BARCODE_ITEM_3_CASE_9_VALUE}</arg>
+<arg>GTIN=${GTIN_ITEM_3_CASE_9_VALUE}</arg>
+<arg>batch_number=${BATCH_NUMBER_ITEM_3_CASE_9_VALUE}</arg>
+<arg>expiry=${EXPIRY_DATE_VALUE}</arg>
+<arg>manufacturing_date=${MANUFACTORING_DATE_VALUE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.810039" elapsed="0.000997"/>
+</kw>
+<kw name="Update Value To Json" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.838487" level="INFO">${BARCODE_VALUES_ITEM_4_CASE_9_FROM_JSON} = {'referenceId': '', 'data': [{'barcode': '0722427099213', 'parent1': '169546230417421868', 'parent2': '957708185521249570', 'GTIN': '04898073445102', 'batch_number': 'Katherine', 'expiry': '2030-08-12...</msg>
+<var>${BARCODE_VALUES_ITEM_4_CASE_9_FROM_JSON}</var>
+<arg>${DATA_FILE_ITEM_4_CASE_9}</arg>
+<arg>$.data[3]</arg>
+<arg>${DIC_ITEM_4_CASE_9}</arg>
+<doc>Update value to JSON using JSONPath</doc>
+<status status="PASS" start="2024-08-08T14:16:50.811036" elapsed="0.027451"/>
+</kw>
+<kw name="Dump Json To File" owner="JSONLibrary">
+<arg>${DATA_FILE_CASE_9_PATH_VALUE}</arg>
+<arg>${BARCODE_VALUES_ITEM_4_CASE_9_FROM_JSON}</arg>
+<doc>Dump JSON to file</doc>
+<status status="PASS" start="2024-08-08T14:16:50.839452" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-08T14:16:50.687585" elapsed="0.152865"/>
+</kw>
+<kw name="Create Data Case 10 In Json File" owner="ShipmentFiles">
+<kw name="Normalize Path" owner="OperatingSystem">
+<msg time="2024-08-08T14:16:50.841478" level="INFO">${DATA_FILE_CASE_10_PATH_VALUE} = D:\Projects\Wes\Wes Automation\TestData\DataCase10.json</msg>
+<var>${DATA_FILE_CASE_10_PATH_VALUE}</var>
+<arg>${DATA_FILE_CASE_10_PATH_VALUE}</arg>
+<doc>Normalizes the given path.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.841478" elapsed="0.000000"/>
+</kw>
+<kw name="Load Json From File" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.842472" level="INFO">${DATA_FILE_ITEM_1_CASE_10} = {'referenceId': '', 'data': [{'barcode': '4196349716113', 'parent1': '226647318205022581', 'parent2': '838437203251872925', 'parent3': '272397631387696699', 'GTIN': '91546015849113', 'batch_number': '...</msg>
+<var>${DATA_FILE_ITEM_1_CASE_10}</var>
+<arg>${DATA_FILE_CASE_10_PATH_VALUE}</arg>
+<doc>Load JSON from file.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.841478" elapsed="0.000994"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.842472" level="INFO">${INVENTORY_1_BARCODE_ITEM_1_CASE_10_VALUE} = 131048961715926273</msg>
+<var>${INVENTORY_1_BARCODE_ITEM_1_CASE_10_VALUE}</var>
+<arg>18</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.842472" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.843467" level="INFO">${INVENTORY_1_BARCODE_ITEM_1_CASE_10_VALUE} = 131048961715926273</msg>
+<arg>${INVENTORY_1_BARCODE_ITEM_1_CASE_10_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.842472" elapsed="0.000995"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.843467" level="INFO">${CASE_1_BARCODE_ITEM_1_CASE_10_VALUE} = 677785603704784608</msg>
+<var>${CASE_1_BARCODE_ITEM_1_CASE_10_VALUE}</var>
+<arg>18</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.843467" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.843467" level="INFO">${CASE_1_BARCODE_ITEM_1_CASE_10_VALUE} = 677785603704784608</msg>
+<arg>${CASE_1_BARCODE_ITEM_1_CASE_10_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.843467" elapsed="0.000997"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.844608" level="INFO">${CASE_2_BARCODE_ITEM_1_CASE_10_VALUE} = 144090034031619226</msg>
+<var>${CASE_2_BARCODE_ITEM_1_CASE_10_VALUE}</var>
+<arg>18</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.844608" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.844608" level="INFO">${CASE_2_BARCODE_ITEM_1_CASE_10_VALUE} = 144090034031619226</msg>
+<arg>${CASE_2_BARCODE_ITEM_1_CASE_10_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.844608" elapsed="0.000000"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.845634" level="INFO">${ITEM_BARCODE_ITEM_1_CASE_10_VALUE} = 6435207142816</msg>
+<var>${ITEM_BARCODE_ITEM_1_CASE_10_VALUE}</var>
+<arg>13</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.844608" elapsed="0.001026"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.845634" level="INFO">${ITEM_BARCODE_ITEM_1_CASE_10_VALUE} = 6435207142816</msg>
+<arg>${ITEM_BARCODE_ITEM_1_CASE_10_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.845634" elapsed="0.000000"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.845634" level="INFO">${GTIN_ITEM_1_CASE_10_VALUE} = 23020001913922</msg>
+<var>${GTIN_ITEM_1_CASE_10_VALUE}</var>
+<arg>14</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.845634" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.846628" level="INFO">${GTIN_ITEM_1_CASE_10_VALUE} = 23020001913922</msg>
+<arg>${GTIN_ITEM_1_CASE_10_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.845634" elapsed="0.000994"/>
+</kw>
+<kw name="First Name" owner="FakerLibrary">
+<msg time="2024-08-08T14:16:50.846628" level="INFO">${BATCH_NUMBER_ITEM_1_CASE_10_VALUE} = Marcus</msg>
+<var>${BATCH_NUMBER_ITEM_1_CASE_10_VALUE}</var>
+<status status="PASS" start="2024-08-08T14:16:50.846628" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.847600" level="INFO">${BATCH_NUMBER_ITEM_1_CASE_10_VALUE} = Marcus</msg>
+<arg>${BATCH_NUMBER_ITEM_1_CASE_10_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.846628" elapsed="0.000972"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.847600" level="INFO">${DIC_ITEM_1_CASE_10} = {'barcode': '6435207142816', 'parent1': '144090034031619226', 'parent2': '677785603704784608', 'parent3': '131048961715926273', 'GTIN': '23020001913922', 'batch_number': 'Marcus', 'expiry': '2030-08-1...</msg>
+<var>${DIC_ITEM_1_CASE_10}</var>
+<arg>barcode=${ITEM_BARCODE_ITEM_1_CASE_10_VALUE}</arg>
+<arg>parent1=${CASE_2_BARCODE_ITEM_1_CASE_10_VALUE}</arg>
+<arg>parent2=${CASE_1_BARCODE_ITEM_1_CASE_10_VALUE}</arg>
+<arg>parent3=${INVENTORY_1_BARCODE_ITEM_1_CASE_10_VALUE}</arg>
+<arg>GTIN=${GTIN_ITEM_1_CASE_10_VALUE}</arg>
+<arg>batch_number=${BATCH_NUMBER_ITEM_1_CASE_10_VALUE}</arg>
+<arg>expiry=${EXPIRY_DATE_VALUE}</arg>
+<arg>manufacturing_date=${MANUFACTORING_DATE_VALUE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.847600" elapsed="0.000000"/>
+</kw>
+<kw name="Update Value To Json" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.869871" level="INFO">${BARCODE_VALUES_ITEM_1_CASE_10_FROM_JSON} = {'referenceId': '', 'data': [{'barcode': '6435207142816', 'parent1': '144090034031619226', 'parent2': '677785603704784608', 'parent3': '131048961715926273', 'GTIN': '23020001913922', 'batch_number': '...</msg>
+<var>${BARCODE_VALUES_ITEM_1_CASE_10_FROM_JSON}</var>
+<arg>${DATA_FILE_ITEM_1_CASE_10}</arg>
+<arg>$.data[0]</arg>
+<arg>${DIC_ITEM_1_CASE_10}</arg>
+<doc>Update value to JSON using JSONPath</doc>
+<status status="PASS" start="2024-08-08T14:16:50.848599" elapsed="0.021272"/>
+</kw>
+<kw name="Dump Json To File" owner="JSONLibrary">
+<arg>${DATA_FILE_CASE_10_PATH_VALUE}</arg>
+<arg>${BARCODE_VALUES_ITEM_1_CASE_10_FROM_JSON}</arg>
+<doc>Dump JSON to file</doc>
+<status status="PASS" start="2024-08-08T14:16:50.870834" elapsed="0.000000"/>
+</kw>
+<kw name="Load Json From File" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.871830" level="INFO">${DATA_FILE_ITEM_2_CASE_10} = {'referenceId': '', 'data': [{'barcode': '6435207142816', 'parent1': '144090034031619226', 'parent2': '677785603704784608', 'parent3': '131048961715926273', 'GTIN': '23020001913922', 'batch_number': '...</msg>
+<var>${DATA_FILE_ITEM_2_CASE_10}</var>
+<arg>${DATA_FILE_CASE_10_PATH_VALUE}</arg>
+<doc>Load JSON from file.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.870834" elapsed="0.000996"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.872828" level="INFO">${ITEM_BARCODE_ITEM_2_CASE_10_VALUE} = 3289969187301</msg>
+<var>${ITEM_BARCODE_ITEM_2_CASE_10_VALUE}</var>
+<arg>13</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.871830" elapsed="0.000998"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.872828" level="INFO">${ITEM_BARCODE_ITEM_2_CASE_10_VALUE} = 3289969187301</msg>
+<arg>${ITEM_BARCODE_ITEM_2_CASE_10_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.872828" elapsed="0.000000"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.873859" level="INFO">${DIC_ITEM_2_CASE_10} = {'barcode': '3289969187301', 'parent1': '144090034031619226', 'parent2': '677785603704784608', 'parent3': '131048961715926273', 'GTIN': '23020001913922', 'batch_number': 'Marcus', 'expiry': '2030-08-1...</msg>
+<var>${DIC_ITEM_2_CASE_10}</var>
+<arg>barcode=${ITEM_BARCODE_ITEM_2_CASE_10_VALUE}</arg>
+<arg>parent1=${CASE_2_BARCODE_ITEM_1_CASE_10_VALUE}</arg>
+<arg>parent2=${CASE_1_BARCODE_ITEM_1_CASE_10_VALUE}</arg>
+<arg>parent3=${INVENTORY_1_BARCODE_ITEM_1_CASE_10_VALUE}</arg>
+<arg>GTIN=${GTIN_ITEM_1_CASE_10_VALUE}</arg>
+<arg>batch_number=${BATCH_NUMBER_ITEM_1_CASE_10_VALUE}</arg>
+<arg>expiry=${EXPIRY_DATE_VALUE}</arg>
+<arg>manufacturing_date=${MANUFACTORING_DATE_VALUE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.872828" elapsed="0.001031"/>
+</kw>
+<kw name="Update Value To Json" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.897916" level="INFO">${BARCODE_VALUES_ITEM_2_CASE_10_FROM_JSON} = {'referenceId': '', 'data': [{'barcode': '6435207142816', 'parent1': '144090034031619226', 'parent2': '677785603704784608', 'parent3': '131048961715926273', 'GTIN': '23020001913922', 'batch_number': '...</msg>
+<var>${BARCODE_VALUES_ITEM_2_CASE_10_FROM_JSON}</var>
+<arg>${DATA_FILE_ITEM_2_CASE_10}</arg>
+<arg>$.data[1]</arg>
+<arg>${DIC_ITEM_2_CASE_10}</arg>
+<doc>Update value to JSON using JSONPath</doc>
+<status status="PASS" start="2024-08-08T14:16:50.873859" elapsed="0.024057"/>
+</kw>
+<kw name="Dump Json To File" owner="JSONLibrary">
+<arg>${DATA_FILE_CASE_10_PATH_VALUE}</arg>
+<arg>${BARCODE_VALUES_ITEM_2_CASE_10_FROM_JSON}</arg>
+<doc>Dump JSON to file</doc>
+<status status="PASS" start="2024-08-08T14:16:50.897916" elapsed="0.001028"/>
+</kw>
+<kw name="Load Json From File" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.899939" level="INFO">${DATA_FILE_ITEM_3_CASE_10} = {'referenceId': '', 'data': [{'barcode': '6435207142816', 'parent1': '144090034031619226', 'parent2': '677785603704784608', 'parent3': '131048961715926273', 'GTIN': '23020001913922', 'batch_number': '...</msg>
+<var>${DATA_FILE_ITEM_3_CASE_10}</var>
+<arg>${DATA_FILE_CASE_10_PATH_VALUE}</arg>
+<doc>Load JSON from file.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.898944" elapsed="0.000995"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.900937" level="INFO">${CASE_3_BARCODE_ITEM_3_CASE_10_VALUE} = 584043814499938083</msg>
+<var>${CASE_3_BARCODE_ITEM_3_CASE_10_VALUE}</var>
+<arg>18</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.899939" elapsed="0.000998"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.900937" level="INFO">${CASE_3_BARCODE_ITEM_3_CASE_10_VALUE} = 584043814499938083</msg>
+<arg>${CASE_3_BARCODE_ITEM_3_CASE_10_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.900937" elapsed="0.000000"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.901935" level="INFO">${ITEM_BARCODE_ITEM_3_CASE_10_VALUE} = 8494293538733</msg>
+<var>${ITEM_BARCODE_ITEM_3_CASE_10_VALUE}</var>
+<arg>13</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.901935" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.902930" level="INFO">${ITEM_BARCODE_ITEM_3_CASE_10_VALUE} = 8494293538733</msg>
+<arg>${ITEM_BARCODE_ITEM_3_CASE_10_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.901935" elapsed="0.000995"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.903929" level="INFO">${DIC_ITEM_3_CASE_10} = {'barcode': '8494293538733', 'parent1': '584043814499938083', 'parent2': '677785603704784608', 'parent3': '131048961715926273', 'GTIN': '23020001913922', 'batch_number': 'Marcus', 'expiry': '2030-08-1...</msg>
+<var>${DIC_ITEM_3_CASE_10}</var>
+<arg>barcode=${ITEM_BARCODE_ITEM_3_CASE_10_VALUE}</arg>
+<arg>parent1=${CASE_3_BARCODE_ITEM_3_CASE_10_VALUE}</arg>
+<arg>parent2=${CASE_1_BARCODE_ITEM_1_CASE_10_VALUE}</arg>
+<arg>parent3=${INVENTORY_1_BARCODE_ITEM_1_CASE_10_VALUE}</arg>
+<arg>GTIN=${GTIN_ITEM_1_CASE_10_VALUE}</arg>
+<arg>batch_number=${BATCH_NUMBER_ITEM_1_CASE_10_VALUE}</arg>
+<arg>expiry=${EXPIRY_DATE_VALUE}</arg>
+<arg>manufacturing_date=${MANUFACTORING_DATE_VALUE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.902930" elapsed="0.000999"/>
+</kw>
+<kw name="Update Value To Json" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.925578" level="INFO">${BARCODE_VALUES_ITEM_3_CASE_10_FROM_JSON} = {'referenceId': '', 'data': [{'barcode': '6435207142816', 'parent1': '144090034031619226', 'parent2': '677785603704784608', 'parent3': '131048961715926273', 'GTIN': '23020001913922', 'batch_number': '...</msg>
+<var>${BARCODE_VALUES_ITEM_3_CASE_10_FROM_JSON}</var>
+<arg>${DATA_FILE_ITEM_3_CASE_10}</arg>
+<arg>$.data[2]</arg>
+<arg>${DIC_ITEM_3_CASE_10}</arg>
+<doc>Update value to JSON using JSONPath</doc>
+<status status="PASS" start="2024-08-08T14:16:50.903929" elapsed="0.021649"/>
+</kw>
+<kw name="Dump Json To File" owner="JSONLibrary">
+<arg>${DATA_FILE_CASE_10_PATH_VALUE}</arg>
+<arg>${BARCODE_VALUES_ITEM_3_CASE_10_FROM_JSON}</arg>
+<doc>Dump JSON to file</doc>
+<status status="PASS" start="2024-08-08T14:16:50.925578" elapsed="0.001000"/>
+</kw>
+<kw name="Load Json From File" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.927576" level="INFO">${DATA_FILE_ITEM_4_CASE_10} = {'referenceId': '', 'data': [{'barcode': '6435207142816', 'parent1': '144090034031619226', 'parent2': '677785603704784608', 'parent3': '131048961715926273', 'GTIN': '23020001913922', 'batch_number': '...</msg>
+<var>${DATA_FILE_ITEM_4_CASE_10}</var>
+<arg>${DATA_FILE_CASE_10_PATH_VALUE}</arg>
+<doc>Load JSON from file.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.926578" elapsed="0.000998"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-08-08T14:16:50.927576" level="INFO">${ITEM_BARCODE_ITEM_4_CASE_10_VALUE} = 5128239071537</msg>
+<var>${ITEM_BARCODE_ITEM_4_CASE_10_VALUE}</var>
+<arg>13</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.927576" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.928604" level="INFO">${ITEM_BARCODE_ITEM_4_CASE_10_VALUE} = 5128239071537</msg>
+<arg>${ITEM_BARCODE_ITEM_4_CASE_10_VALUE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.928604" elapsed="0.000000"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-08-08T14:16:50.929603" level="INFO">${DIC_ITEM_4_CASE_10} = {'barcode': '5128239071537', 'parent1': '584043814499938083', 'parent2': '677785603704784608', 'parent3': '131048961715926273', 'GTIN': '23020001913922', 'batch_number': 'Marcus', 'expiry': '2030-08-1...</msg>
+<var>${DIC_ITEM_4_CASE_10}</var>
+<arg>barcode=${ITEM_BARCODE_ITEM_4_CASE_10_VALUE}</arg>
+<arg>parent1=${CASE_3_BARCODE_ITEM_3_CASE_10_VALUE}</arg>
+<arg>parent2=${CASE_1_BARCODE_ITEM_1_CASE_10_VALUE}</arg>
+<arg>parent3=${INVENTORY_1_BARCODE_ITEM_1_CASE_10_VALUE}</arg>
+<arg>GTIN=${GTIN_ITEM_1_CASE_10_VALUE}</arg>
+<arg>batch_number=${BATCH_NUMBER_ITEM_1_CASE_10_VALUE}</arg>
+<arg>expiry=${EXPIRY_DATE_VALUE}</arg>
+<arg>manufacturing_date=${MANUFACTORING_DATE_VALUE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.928604" elapsed="0.000999"/>
+</kw>
+<kw name="Update Value To Json" owner="JSONLibrary">
+<msg time="2024-08-08T14:16:50.952941" level="INFO">${BARCODE_VALUES_ITEM_4_CASE_10_FROM_JSON} = {'referenceId': '', 'data': [{'barcode': '6435207142816', 'parent1': '144090034031619226', 'parent2': '677785603704784608', 'parent3': '131048961715926273', 'GTIN': '23020001913922', 'batch_number': '...</msg>
+<var>${BARCODE_VALUES_ITEM_4_CASE_10_FROM_JSON}</var>
+<arg>${DATA_FILE_ITEM_4_CASE_10}</arg>
+<arg>$.data[3]</arg>
+<arg>${DIC_ITEM_4_CASE_10}</arg>
+<doc>Update value to JSON using JSONPath</doc>
+<status status="PASS" start="2024-08-08T14:16:50.929603" elapsed="0.023338"/>
+</kw>
+<kw name="Dump Json To File" owner="JSONLibrary">
+<arg>${DATA_FILE_CASE_10_PATH_VALUE}</arg>
+<arg>${BARCODE_VALUES_ITEM_4_CASE_10_FROM_JSON}</arg>
+<doc>Dump JSON to file</doc>
+<status status="PASS" start="2024-08-08T14:16:50.952941" elapsed="0.000996"/>
+</kw>
+<status status="PASS" start="2024-08-08T14:16:50.841478" elapsed="0.112459"/>
+</kw>
+<kw name="Close web browser" owner="Common" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-08-08T14:16:50.954898" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-08T14:16:50.954898" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-08T14:16:50.032053" elapsed="0.924059"/>
+</test>
+<status status="PASS" start="2024-08-08T14:16:48.518809" elapsed="2.438619"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="E2EWesDashboardTest">E2EWesDashboardTest</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-08-08T14:16:49.989531" level="ERROR">Error in file 'D:\Projects\Wes\Wes Automation\Tests\E2E\E2EWesDashboardTest.robot' on line 7: Resource file '..\..\Resources\PO\WesDashboard\SubPages\AddProducts.robot' does not exist.</msg>
+</errors>
+</robot>
